@@ -37,3 +37,9 @@ $(top_srcdir)/configure.files:
 	cd $(top_srcdir) && $(MAKE) -f admin/Makefile.common configure.files
 
 MAINTAINERCLEANFILES = subdirs configure.in acinclude.m4 SUBDIRS
+
+cvs-local: 
+	@if test ! -d kdvi; then exit 0; fi
+	@echo "*** preparing kdvi/kpathsea"
+	@(cd kdvi/kpathsea && aclocal && automake && autoconf)
+
