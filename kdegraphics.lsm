@@ -5,7 +5,7 @@ Entered-date:   2002-02-04
 Description:    graphical applications written for the K Desktop Environment (KDE)
 Keywords:       KDE X11 desktop Qt 
 Author:         submit@bugs.kde.org (KDE Bugtracking System)
-Primary-site:   http://www.kde.org/kdegames
+Primary-site:   http://www.kde.org/
 Alternate-site: http://www.kde.org/mirrors.html
 Platforms:      Unix, Qt
 Copying-policy: GPL, Artistic
