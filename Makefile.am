@@ -2,7 +2,7 @@
 ## (C) 1997 Stephan Kulow
 
 AUTOMAKE_OPTIONS = foreign 1.4
-COMPILE_FIRST = kviewshell
+COMPILE_FIRST = kviewshell libkscan
 SUBDIRS = $(COMPILE_FIRST) $(TOPSUBDIRS)
 DISTCLEANFILES = inst-apps
 
