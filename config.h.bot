@@ -21,11 +21,17 @@ const bool true = 1;
 
 #ifndef HAVE_SETENV
 #define HAVE_SETENV
+#ifdef __cplusplus
+extern "C" 
+#endif
 int setenv(const char *name, const char *value, int overwrite);
 #endif
 
 #ifndef HAVE_UNSETENV
 #define HAVE_UNSETENV
+#ifdef __cplusplus
+extern "C" 
+#endif
 int unsetenv(const char *name);
 #endif
 
