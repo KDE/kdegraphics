@@ -10,7 +10,7 @@ What it is
 
 kdegraphics is a collection of graphic oriented applications:
 
-* kamera: digital camera io_slave for Konquerer. Together gPhoto this
+* kamera: digital camera io_slave for Konqueror. Together gPhoto this
   allows you to access your camara's picture with the URL kamera:/
 * kcoloredit: contains two programs: a color value editor and also a color
   picker
