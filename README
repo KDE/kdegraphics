@@ -29,15 +29,12 @@ kdegraphics is a collection of graphic oriented applications:
 
 * ksnapshot: make snapshots of the screen contents
 * kview: picture viewer, provided as standalone program and embeddable KPart
-* pixie: another picture viewer, in some aspects better or faster, but not
-  embeddable
 * kviewshell: generic framework for viewer applications
 
 This package also contains two more general libraries:
 
 * libkscan: library to access scanners used by kooka (and koffice), needs
   SANE to be used
-* libminimagick: filters like in ImageMagick, used by pixie
 
 Common Mistakes
 ---------------
