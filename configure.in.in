@@ -14,5 +14,5 @@ AC_CHECK_MKSTEMPS
 dnl Checks for typedefs, structures, and compiler characteristics.
 AC_HEADER_TIME
 
-CXXFLAGS="$CXXFLAGS -DQT_CLEAN_NAMESPACE -DQT_NO_ASCII_CAST"
+CXXFLAGS="$CXXFLAGS $KDE_DEFAULT_CXXFLAGS"
 
