@@ -17,3 +17,5 @@ dist-hook:
 
 MAINTAINERCLEANFILES = subdirs configure.in acinclude.m4 SUBDIRS
 
+include admin/deps.am
+
