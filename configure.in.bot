@@ -6,3 +6,11 @@ if test -z "$ac_imlib_config"; then
   echo "http://freshmeat.net/redir/imlib/4385/url_tgz/imlib-1.9.10.tar.gz"
   echo ""
 fi
+
+if test -z "$KSCANDIR"; then
+  echo ""
+  echo "You're missing libsane. libkscan/kooka won't be compiled without libsane."
+  echo "You can download it from"
+  echo "http://www.mostang.com/sane/"
+  echo ""
+fi
