@@ -13,3 +13,4 @@ dnl Checks for typedefs, structures, and compiler characteristics.
 AC_HEADER_TIME
 
 CXXFLAGS="$CXXFLAGS -DQT_CLEAN_NAMESPACE -DQT_NO_ASCII_CAST"
+
