@@ -44,3 +44,6 @@ cvs-local:
 	@echo "*** preparing kdvi/kpathsea"
 	@(cd kdvi/kpathsea && aclocal && autoheader && automake && autoconf)
 
+cvs-dist-local:
+	@(cd kdvi/kpathsea && automake -i &&  autoconf)
+
