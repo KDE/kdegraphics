@@ -47,9 +47,6 @@ kdegraphics is a collection of graphic oriented applications:
 * kooka
     A raster image scan program, based on SANE and libkscan.
 
-* kpaint
-    A simple pixel oriented image drawing program.
-
 * kolourpaint
     An easy-to-use paint program designed for everyday tasks like drawing
     simple diagrams/logos/icons and editing screenshots.
