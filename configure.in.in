@@ -65,6 +65,10 @@ AC_CHECK_BOOL
 dnl Checks for library functions. MISCOBJS is for kdecore
 AC_CHECK_SETENV
 
+dnl Mico, mini STL, python checks
+KDE_CHECK_MICO(2.2.3)
+KDE_CHECK_NEWLIBS
+
 dnl output files
 topdir=`pwd`
 AC_SUBST(topdir)
