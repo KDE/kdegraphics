@@ -76,8 +76,8 @@ kdegraphics is a collection of graphic oriented applications:
 
 Common Mistakes
 ---------------
-If configure claims Qt cannot be found, have a look at http://www.troll.no
-to get a copy of latest Qt 3.x version.
+If configure claims Qt cannot be found, have a look at http://www.trolltech.com
+to get a copy of latest Qt 3.3.x version.
 
 
 Debugging
