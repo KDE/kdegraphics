@@ -76,7 +76,7 @@ AC_SUBST(topdir)
 dnl Perform program name transformation
 AC_ARG_PROGRAM
 
-KDE_CREATE_SUBDIRSLIST (kpics)
+KDE_CREATE_SUBDIRSLIST
 
 dnl this will be replaced by Makefile.am
 AC_OUTPUT()
