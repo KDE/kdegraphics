@@ -40,7 +40,7 @@ Common Mistakes
 ---------------
 
 If configure claims Qt cannot be found, have a look at http://www.troll.no
-to get a copy of Qt, version 2.1.0 or newer.
+to get a copy of Qt, version 3.0 or newer.
 
 Debugging
 ---------
