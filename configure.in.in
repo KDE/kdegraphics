@@ -44,10 +44,6 @@ LIBKHTMLW="-lkhtmlw -ljscript" dnl this is somewhat historical, since jscript is
 AC_SUBST(LIBKHTMLW)
 
 dnl Image readers/writers
-
-AC_FIND_GIF
-AC_FIND_JPEG
-AC_FIND_TIFF
 KDE_CHECK_KIMGIO
 
 dnl Checks for header files.
