@@ -1,8 +1,43 @@
 In this file:
 
+* What it is
 * Common Mistakes
 * Debugging
 * More Info
+
+What it is
+----------
+
+kdegraphics is a collection of graphic oriented applications:
+
+* kamera: digital camera io_slave for Konquerer. Together gPhoto this
+  allows you to access your camara's picture with the URL kamera:/
+* kcoloredit: contains two programs: a color value editor and also a color
+  picker
+* kdvi: program (and embeddable KPart) to display *.DVI files from TeX
+* kfax: a program to display raw and tiffed fax images (g3, g3-2d, g4)
+* kfaxview: an embeddable KPart to display tiffed fax images
+* kfract: a fractal image generator
+* kghostview: program (and embeddable KPart) to display *.PDF and *.PS
+* kiconedit: an icon editor
+* kooka: a raster image scan program, based on SANE and libkscan
+* kpaint: a simple pixel oriented image drawing program
+* kruler: a ruler in inch, centimeter and pixel to check distances on the
+  screen
+* kpixmap2bitmap: converts an image into several bitmaps, one for each color.
+  Bitmaps can be saved directly as *.xbm, as xpm into *.h or as a QCoord object.
+
+* ksnapshot: make snapshots of the screen contents
+* kview: picture viewer, provided as standalone program and embeddable KPart
+* pixie: another picture viewer, in some aspects better or faster, but not
+  embeddable
+* kviewshell: generic framework for viewer applications
+
+This package also contains two more general libraries:
+
+* libkscan: library to access scanners used by kooka (and koffice), needs
+  SANE to be used
+* libminimagick: filters like in ImageMagick, used by pixie
 
 Common Mistakes
 ---------------
@@ -19,9 +54,6 @@ is alpha software and this makes debugging things a whole lot easier.
 
 More Info
 ---------
-
-Have a look at the individual subdirectories, if you want to know, what
-versions of apps are included.
 
 Please direct any bug reports to our bug list by visiting
 http://bugs.kde.org.
