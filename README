@@ -25,8 +25,6 @@ kdegraphics is a collection of graphic oriented applications:
 * kpaint: a simple pixel oriented image drawing program
 * kruler: a ruler in inch, centimeter and pixel to check distances on the
           screen
-* kpixmap2bitmap: converts an image into several bitmaps, one for each color.
-  Bitmaps can be saved directly as *.xbm, as xpm into *.h or as a QCoord object
 * ksnapshot: make snapshots of the screen contents
 * kuickshow: fast and comfortable imageviewer
 * kview: picture viewer, provided as standalone program and embeddable KPart
