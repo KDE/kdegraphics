@@ -45,3 +45,14 @@ extern "C"
 int snprintf(char *str, size_t n, char const *fmt, ...);
 #endif
 
+#ifdef __osf__
+#ifndef HAVE_USLEEP                 /* usleep not defined in Tru64  */ 
+#ifdef __cplusplus  
+extern "C" void usleep(unsigned int);
+#else
+void usleep(unsigned int);
+#endif
+#endif
+#endif
+
+
