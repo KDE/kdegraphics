@@ -21,6 +21,9 @@ install-data-local:
 	@echo "****************************************************"
 	@echo ""
 
+$(top_srcdir)/acinclude.m4: $(top_srcdir)/admin/acinclude.m4.in $(top_srcdir)/admin/libtool.m4.in
+	@cd $(top_srcdir) && cat admin/acinclude.m4.in admin/libtool.m4.in > acinclude.m4
+
 EXTRA_DIST = admin bsd-port debian kdebase.spec.in README.pam kde.pamd 
 
 dist-hook:
