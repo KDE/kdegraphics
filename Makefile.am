@@ -2,7 +2,8 @@
 ## (C) 1997 Stephan Kulow
 
 AUTOMAKE_OPTIONS = foreign 1.4
-SUBDIRS = $(TOPSUBDIRS)
+COMPILE_FIRST = kviewshell
+SUBDIRS = $(COMPILE_FIRST) $(TOPSUBDIRS)
 DISTCLEANFILES = inst-apps
 
 install-data-local:
