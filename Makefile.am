@@ -30,7 +30,7 @@ EXTRA_DIST = admin bsd-port debian kdebase.spec.in README.pam kde.pamd
 dist-hook:
 	cd $(top_distdir) && perl $(top_srcdir)/admin/am_edit -padmin
 
-$(top_srcdir)/configure.in: $(top_srcdir)/configure.files $(shell test -f $(top_srcdir)/configure.files && cat $(top_srcdir)/configure.files)
+$(top_srcdir)/configure.in: $(top_srcdir)/configure.files $(shell test -f $(top_srcdir)/configure.files && sed -e "s#^#\$(top_srcdir)/#" $(top_srcdir)/configure.files)
 	cd $(top_srcdir) && $(MAKE) -f admin/Makefile.common configure.in
 $(top_srcdir)/subdirs:
 	cd $(top_srcdir) && $(MAKE) -f admin/Makefile.common subdirs
