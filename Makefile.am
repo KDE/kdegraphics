@@ -22,13 +22,13 @@ install-data-local:
 	@echo ""
 
 messages:
-	make -f admin/Makefile.common package-messages
+	@make -f admin/Makefile.common package-messages
 
-configure.in: configure.in.in subdirs
-	$(MAKE) -f admin/Makefile.common configure.in
+$(top_srcdir)/configure.in: $(top_srcdir)/configure.in.in $(top_srcdir)/subdirs
+	@cd $(top_srcdir) && $(MAKE) -f admin/Makefile.common configure.in
 
-subdirs:
-	$(MAKE) -f admin/Makefile.common subdirs
+$(top_srcdir)/subdirs:
+	@cd $(top_srcdir) && $(MAKE) -f admin/Makefile.common subdirs
 
 acinclude.m4: $(top_srcdir)/admin/acinclude.m4.in $(top_srcdir)/admin/libtool.m4.in
 	@cd $(top_srcdir) && cat admin/acinclude.m4.in admin/libtool.m4.in > acinclude.m4 
