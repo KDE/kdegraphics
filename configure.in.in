@@ -65,6 +65,8 @@ dnl Mico, mini STL, python checks
 KDE_CHECK_MICO()
 KDE_CHECK_NEWLIBS
 
+DO_NOT_COMPILE="$DO_NOT_COMPILE kiconedit"
+
 dnl output files
 topdir=`pwd`
 AC_SUBST(topdir)
