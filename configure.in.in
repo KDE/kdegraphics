@@ -1,7 +1,5 @@
 #MIN_CONFIG
 DO_NOT_COMPILE="$DO_NOT_COMPILE"
-dnl Image readers/writers
-KDE_CHECK_KIMGIO
 
 dnl Checks for header files.
 AC_HEADER_DIRENT
