@@ -11,36 +11,37 @@ What it is
 kdegraphics is a collection of graphic oriented applications:
 
 * kamera: digital camera io_slave for Konqueror. Together gPhoto this
-  allows you to access your camara's picture with the URL kamera:/
+          allows you to access your camera's picture with the URL kamera:/
 * kcoloredit: contains two programs: a color value editor and also a color
-  picker
+              picker
 * kdvi: program (and embeddable KPart) to display *.DVI files from TeX
 * kfax: a program to display raw and tiffed fax images (g3, g3-2d, g4)
 * kfaxview: an embeddable KPart to display tiffed fax images
+* kfile-plugins: provide meta information for graphic files
 * kfract: a fractal image generator
 * kghostview: program (and embeddable KPart) to display *.PDF and *.PS
 * kiconedit: an icon editor
 * kooka: a raster image scan program, based on SANE and libkscan
 * kpaint: a simple pixel oriented image drawing program
 * kruler: a ruler in inch, centimeter and pixel to check distances on the
-  screen
+          screen
 * kpixmap2bitmap: converts an image into several bitmaps, one for each color.
-  Bitmaps can be saved directly as *.xbm, as xpm into *.h or as a QCoord object.
-
+  Bitmaps can be saved directly as *.xbm, as xpm into *.h or as a QCoord object
 * ksnapshot: make snapshots of the screen contents
+* kuickshow: fast and comfortable imageviewer
 * kview: picture viewer, provided as standalone program and embeddable KPart
 * kviewshell: generic framework for viewer applications
 
 This package also contains two more general libraries:
 
 * libkscan: library to access scanners used by kooka (and koffice), needs
-  SANE to be used
+            SANE to be used
 
 Common Mistakes
 ---------------
 
 If configure claims Qt cannot be found, have a look at http://www.troll.no
-to get a copy of Qt, version 3.0 or newer.
+to get a copy of latest Qt 3.x version.
 
 Debugging
 ---------
