@@ -1,5 +1,5 @@
 #MIN_CONFIG
- 
+DO_NOT_COMPILE="$DO_NOT_COMPILE pixie"
 dnl Image readers/writers
 KDE_CHECK_KIMGIO
 
