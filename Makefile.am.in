@@ -2,11 +2,9 @@
 ## (C) 1997 Stephan Kulow
 
 AUTOMAKE_OPTIONS = foreign 1.4
-if include_kooka
-COMPILE_FIRST = kviewshell libkscan
-else
-COMPILE_FIRST = kviewshell
-endif
+
+COMPILE_BEFORE_kooka = libkscan
+COMPILE_AFTER_kviewshell = kdvi kfaxview
 
 DISTCLEANFILES = inst-apps
 
