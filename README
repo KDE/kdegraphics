@@ -1,55 +1,93 @@
 In this file:
 
-* What it is
+* About kdegraphics
 * Common Mistakes
 * Debugging
 * More Info
 
-What it is
-----------
 
+About kdegraphics
+-----------------
 kdegraphics is a collection of graphic oriented applications:
 
-* kamera: digital camera io_slave for Konqueror. Together gPhoto this
-          allows you to access your camera's picture with the URL kamera:/
-* kcoloredit: contains two programs: a color value editor and also a color
-              picker
-* kdvi: program (and embeddable KPart) to display *.DVI files from TeX
-* kfax: a program to display raw and tiffed fax images (g3, g3-2d, g4)
-* kfaxview: an embeddable KPart to display tiffed fax images
-* kfile-plugins: provide meta information for graphic files
-* kghostview: program (and embeddable KPart) to display *.PDF and *.PS
-* kiconedit: an icon editor
-* kooka: a raster image scan program, based on SANE and libkscan
-* kpaint: a simple pixel oriented image drawing program
-* kruler: a ruler in inch, centimeter and pixel to check distances on the
-          screen
-* ksnapshot: make snapshots of the screen contents
-* kuickshow: fast and comfortable imageviewer
-* kview: picture viewer, provided as standalone program and embeddable KPart
-* kviewshell: generic framework for viewer applications
+* debian
+    Files needed to create Debian packages.
 
-This package also contains two more general libraries:
+* doc
+    XML based documentation for the programs.
 
-* libkscan: library to access scanners used by kooka (and koffice), needs
-            SANE to be used
+* kamera
+    Digital camera io_slave for Konqueror. Together gPhoto this allows you
+    to access your camera's picture with the URL kamera:/
+
+* kcoloredit
+    Contains two programs: a color value editor and also a color picker.
+
+* kdvi
+    Program (and embeddable KPart) to display *.DVI files from TeX.
+
+* kfax
+    A program to display raw and tiffed fax images (g3, g3-2d, g4).
+
+* kfaxview
+    An embeddable KPart to display tiffed fax images.
+
+* kfile-plugins
+    Provide meta information for graphic files.
+
+* kghostview
+    Program (and embeddable KPart) to display *.pdf and *.ps
+
+* kiconedit
+    An icon editor.
+
+* kmrml
+    Connects to a MRML server and find similar images
+
+* kooka
+    A raster image scan program, based on SANE and libkscan.
+
+* kpaint
+    A simple pixel oriented image drawing program.
+
+* kpovmodeler
+    Program to enter scenes for the 3D rendering engine PovRay.
+
+* kruler
+    A ruler in inch, centimeter and pixel to check distances on the screen.
+
+* ksnapshot
+    Make snapshots of the screen contents.
+
+* kuickshow
+    Fast and comfortable imageviewer.
+
+* kview
+    Picture viewer, provided as standalone program and embeddable KPart.
+
+* kviewshell
+    Generic framework for viewer applications.
+
+* libkscan
+    Library to access scanners used by kooka (and koffice), needs SANE to be
+    used
+
 
 Common Mistakes
 ---------------
-
 If configure claims Qt cannot be found, have a look at http://www.troll.no
 to get a copy of latest Qt 3.x version.
 
+
 Debugging
 ---------
-
 You can use --enable-debug with the configure script, if you want to have
 debug code in your KDE apps and libs. This will ensure useful and more 
 verbose backtraces, but will require a lot more disk space. 
 
+
 More Info
 ---------
-
 Please direct any bug reports to our bug list by visiting
 http://bugs.kde.org.
 
@@ -57,5 +95,6 @@ If you have problems compiling and installing this package, contact
 me at coolo@kde.org.
 
 General KDE discussions should go to the KDE mailing list (kde@kde.org).
+
 
 $Id$
