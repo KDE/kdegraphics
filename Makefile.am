@@ -21,13 +21,16 @@ install-data-local:
 	@echo "****************************************************"
 	@echo ""
 
-$(top_srcdir)/configure.in: $(top_srcdir)/configure.in.in $(top_srcdir)/subdirs
-	@cd $(top_srcdir) && $(MAKE) -f admin/Makefile.common configure.in
+EXTRA_DIST = admin bsd-port debian kdebase.spec.in README.pam kde.pamd 
 
+dist-hook:
+	cd $(top_distdir) && perl $(top_srcdir)/admin/am_edit -padmin
+
+$(top_srcdir)/configure.in: $(top_srcdir)/configure.files $(shell test -f $(top_srcdir)/configure.files && cat $(top_srcdir)/configure.files)
+	cd $(top_srcdir) && $(MAKE) -f admin/Makefile.common configure.in
 $(top_srcdir)/subdirs:
-	@cd $(top_srcdir) && $(MAKE) -f admin/Makefile.common subdirs
-
-acinclude.m4: $(top_srcdir)/admin/acinclude.m4.in $(top_srcdir)/admin/libtool.m4.in
-	@cd $(top_srcdir) && cat admin/acinclude.m4.in admin/libtool.m4.in > acinclude.m4 
+	cd $(top_srcdir) && $(MAKE) -f admin/Makefile.common subdirs
+$(top_srcdir)/configure.files:
+	cd $(top_srcdir) && $(MAKE) -f admin/Makefile.common configure.files
 
 MAINTAINERCLEANFILES = subdirs configure.in acinclude.m4 SUBDIRS
