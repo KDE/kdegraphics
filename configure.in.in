@@ -10,3 +10,6 @@ AC_CHECK_FUNCS(usleep)
 
 dnl Checks for typedefs, structures, and compiler characteristics.
 AC_HEADER_TIME
+
+AC_CHECK_SETENV
+
