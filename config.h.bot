@@ -1,7 +1,11 @@
 
-#ifndef HAVE_FUNC_SETENV
-#define HAVE_FUNC_SETENV
+#ifndef HAVE_SETENV
+#define HAVE_SETENV
 int setenv(const char *name, const char *value, int overwrite);
+#endif
+
+#ifndef HAVE_UNSETENV
+#define HAVE_UNSETENV
 int unsetenv(const char *name);
 #endif
 

@@ -7,10 +7,8 @@ dnl Checks for header files.
 AC_HEADER_DIRENT
 AC_HEADER_STDC
 AC_CHECK_HEADERS(fcntl.h sys/time.h unistd.h stdlib.h paths.h)
-AC_CHECK_FUNCS(usleep)
+AC_CHECK_FUNCS(usleep setenv unsetenv)
 
 dnl Checks for typedefs, structures, and compiler characteristics.
 AC_HEADER_TIME
-
-AC_CHECK_SETENV
 
