@@ -45,7 +45,6 @@ messages:
 	done
 	rm -f temp.pot
 	rm -rf po.backup
-	(cd po && $(MAKE) -f Makefile.am merge)
 
 configure.in: configure.in.in subdirs
 	$(MAKE) -f admin/Makefile.common configure.in
