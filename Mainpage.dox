@@ -1,0 +1,16 @@
+/**
+	* @mainpage The KDE Graphics API Reference
+	*
+	* This section contains the KDE online class reference for the current
+	* development version of the KDE graphics package. 
+	*
+	* - <a href="kviewshell/html/index.html"><b>kviewshell</b></a>
+        *   (<a href="kviewshell/html/classes.html">classes</a>)\n
+	*   <i>API for the implementation of kviewshell plugins.</i>
+	*
+	* More information about the KDE architecture in form of
+	* tutorials, HOWTOs,
+	* and FAQs can be found at
+	* the <a href="http://developer.kde.org">KDE Developer's corner</a>.
+	*/
+
