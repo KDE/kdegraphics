@@ -18,7 +18,6 @@ kdegraphics is a collection of graphic oriented applications:
 * kfax: a program to display raw and tiffed fax images (g3, g3-2d, g4)
 * kfaxview: an embeddable KPart to display tiffed fax images
 * kfile-plugins: provide meta information for graphic files
-* kfract: a fractal image generator
 * kghostview: program (and embeddable KPart) to display *.PDF and *.PS
 * kiconedit: an icon editor
 * kooka: a raster image scan program, based on SANE and libkscan
