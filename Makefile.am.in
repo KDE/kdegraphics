@@ -16,7 +16,7 @@ install-data-local:
 	@echo ""
 	@echo "*************** Important *************************"
 	@echo ""
-	@echo " add "$(bindir)" to your PATH"
+	@echo " Add "$(bindir)" to your PATH"
 	@echo ""
 	@echo " Please report bugs with our web form at"
 	@echo " http://bugs.kde.org."
