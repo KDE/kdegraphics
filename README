@@ -63,9 +63,6 @@ kdegraphics is a collection of graphic oriented applications:
 * kuickshow
     Fast and comfortable imageviewer.
 
-* kview
-    Picture viewer, provided as standalone program and embeddable KPart.
-
 * kviewshell
     Generic framework for viewer applications.
 
