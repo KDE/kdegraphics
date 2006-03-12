@@ -21,26 +21,26 @@
 /* #undef HAVE_COTHREAD_PATCH */
 
 /* Define to 1 if you have the <crt_externs.h> header file. */
-/* #undef HAVE_CRT_EXTERNS_H */
+#cmakedefine HAVE_CRT_EXTERNS_H 1
 
 /* Defines if your system has the crypt function */
 #define HAVE_CRYPT 1
 
 /* Define to 1 if you have the <dirent.h> header file, and it defines `DIR'.
    */
-#define HAVE_DIRENT_H 1
+#cmakedefine HAVE_DIRENT_H 1
 
 /* Define to 1 if you have the <dlfcn.h> header file. */
-#define HAVE_DLFCN_H 1
+#cmakedefine HAVE_DLFCN_H 1
 
 /* define if the compiler supports exceptions */
 /* #undef HAVE_EXCEPTIONS */
 
 /* Define if you have OpenEXR */
-#define HAVE_EXR 1
+#cmakedefine HAVE_EXR 1
 
 /* Define to 1 if you have the <fcntl.h> header file. */
-#define HAVE_FCNTL_H 1
+#cmakedefine HAVE_FCNTL_H 1
 
 /* Define to 1 if you have the `fork' function. */
 #define HAVE_FORK 1
@@ -58,10 +58,10 @@
 /* #undef HAVE_FTELL64 */
 
 /* Define to 1 if you have the `gethostname' function. */
-#define HAVE_GETHOSTNAME 1
+#cmakedefine HAVE_GETHOSTNAME 1
 
 /* Define to 1 if you have the `getpagesize' function. */
-#define HAVE_GETPAGESIZE 1
+#cmakedefine HAVE_GETPAGESIZE 1
 
 /* Define to 1 if you have the `getpwuid' function. */
 #define HAVE_GETPWUID 1
@@ -85,16 +85,16 @@
 #define HAVE_ICONV 1
 
 /* Define to 1 if you have the <iconv.h> header file. */
-#define HAVE_ICONV_H 1
+#cmakedefine HAVE_ICONV_H 1
 
 /* Define to 1 if you have the <inttypes.h> header file. */
-#define HAVE_INTTYPES_H 1
+#cmakedefine HAVE_INTTYPES_H 1
 
 /* Define to 1 if you have the `iswspace' function. */
 #define HAVE_ISWSPACE 1
 
 /* Define if you have the IJG JPEG library. */
-#define HAVE_JPEG 1
+#cmakedefine HAVE_JPEG 1
 
 /* Defines if your system has the kadmos libraries */
 /* #undef HAVE_KADMOS */
@@ -103,25 +103,25 @@
 /* #undef HAVE_LIBICONV */
 
 /* Define if you have libjpeg */
-#define HAVE_LIBJPEG 1
+#cmakedefine HAVE_LIBJPEG 1
 
 /* Define to 1 if you have the `m' library (-lm). */
 #define HAVE_LIBM 1
 
 /* Define if you have libpng */
-#define HAVE_LIBPNG 1
+#cmakedefine HAVE_LIBPNG 1
 
 /* Define if you have a working libpthread (will enable threaded code) */
 #define HAVE_LIBPTHREAD 1
 
 /* Define if you have libtiff */
-#define HAVE_LIBTIFF 1
+#cmakedefine HAVE_LIBTIFF 1
 
 /* Define if you have libz */
-#define HAVE_LIBZ 1
+#cmakedefine HAVE_LIBZ 1
 
 /* Define to 1 if you have the <limits.h> header file. */
-#define HAVE_LIMITS_H 1
+#cmakedefine HAVE_LIMITS_H 1
 
 /* Define to 1 if the system has the type `long long int'. */
 #define HAVE_LONG_LONG_INT 1
@@ -133,34 +133,34 @@
 #define HAVE_MEMBER_TEMPLATES 1
 
 /* Define to 1 if you have the <memory.h> header file. */
-#define HAVE_MEMORY_H 1
+#cmakedefine HAVE_MEMORY_H 1
 
 /* Define to 1 if you have the `mkstemp' function. */
-#define HAVE_MKSTEMP 1
+#cmakedefine HAVE_MKSTEMP 1
 
 /* Define to 1 if you have the `mkstemps' function. */
-/* #undef HAVE_MKSTEMPS */
+#cmakedefine HAVE_MKSTEMPS 1
 
 /* Define if you have the mkstemps prototype */
-/* #undef HAVE_MKSTEMPS_PROTO */
+#cmakedefine HAVE_MKSTEMPS_PROTO 1
 
 /* Define to 1 if you have a working `mmap' system call. */
-#define HAVE_MMAP 1
+#cmakedefine HAVE_MMAP 1
 
 /* define if the compiler implements namespaces */
 /* #undef HAVE_NAMESPACES */
 
 /* Define to 1 if you have the <ndir.h> header file, and it defines `DIR'. */
-/* #undef HAVE_NDIR_H */
+#cmakedefine HAVE_NDIR_H 1
 
 /* Define if your system needs _NSGetEnviron to set up the environment */
-/* #undef HAVE_NSGETENVIRON */
+#cmakedefine HAVE_NSGETENVIRON 1
 
 /* Define to 1 if you have the <paper.h> header file. */
-#define HAVE_PAPER_H 1
+#cmakedefine HAVE_PAPER_H 1
 
 /* Define to 1 if you have the <paths.h> header file. */
-#define HAVE_PATHS_H 1
+#cmakedefine HAVE_PATHS_H 1
 
 /* Define to 1 if you have the `popen' function. */
 #define HAVE_POPEN 1
@@ -172,37 +172,37 @@
 #define HAVE_PUTC_UNLOCKED 1
 
 /* Define if you have res_init */
-#define HAVE_RES_INIT 1
+#cmakedefine HAVE_RES_INIT 1
 
 /* Define if you have the res_init prototype */
-#define HAVE_RES_INIT_PROTO 1
+#cmakedefine HAVE_RES_INIT_PROTO 1
 
 /* Defines if your system has the sane libraries */
 #define HAVE_SANE 1
 
 /* Define if you have setenv */
-#define HAVE_SETENV 1
+#cmakedefine HAVE_SETENV 1
 
 /* Define if you have the setenv prototype */
-#define HAVE_SETENV_PROTO 1
+#cmakedefine HAVE_SETENV_PROTO 1
 
 /* Define if you have a STL implementation by SGI */
 #define HAVE_SGI_STL 1
 
 /* Define to 1 if you have the `snprintf' function. */
-#define HAVE_SNPRINTF 1
+#cmakedefine HAVE_SNPRINTF 1
 
 /* Define to 1 if you have the <sstream> header file. */
-#define HAVE_SSTREAM 1
+#cmakedefine HAVE_SSTREAM 1
 
 /* define if the compiler comes with standard includes */
 #define HAVE_STDINCLUDES 1
 
 /* Define to 1 if you have the <stdint.h> header file. */
-#define HAVE_STDINT_H 1
+#cmakedefine HAVE_STDINT_H 1
 
 /* Define to 1 if you have the <stdlib.h> header file. */
-#define HAVE_STDLIB_H 1
+#cmakedefine HAVE_STDLIB_H 1
 
 /* Define to 1 if you have the `strerror' function. */
 #define HAVE_STRERROR 1
@@ -211,57 +211,57 @@
 #define HAVE_STRFTIME 1
 
 /* Define to 1 if you have the <strings.h> header file. */
-#define HAVE_STRINGS_H 1
+#cmakedefine HAVE_STRINGS_H 1
 
 /* Define to 1 if you have the <string.h> header file. */
-#define HAVE_STRING_H 1
+#cmakedefine HAVE_STRING_H 1
 
 /* Define if you have strlcat */
-/* #undef HAVE_STRLCAT */
+#cmakedefine HAVE_STRLCAT 1
 
 /* Define if you have the strlcat prototype */
-/* #undef HAVE_STRLCAT_PROTO */
+#cmakedefine HAVE_STRLCAT_PROTO 1
 
 /* Define if you have strlcpy */
-/* #undef HAVE_STRLCPY */
+#cmakedefine HAVE_STRLCPY 1
 
 /* Define if you have the strlcpy prototype */
-/* #undef HAVE_STRLCPY_PROTO */
+#cmakedefine HAVE_STRLCPY_PROTO 1
 
 /* Define to 1 if you have the <sys/bitypes.h> header file. */
-#define HAVE_SYS_BITYPES_H 1
+#cmakedefine HAVE_SYS_BITYPES_H 1
 
 /* Define to 1 if you have the <sys/dir.h> header file, and it defines `DIR'.
    */
-/* #undef HAVE_SYS_DIR_H */
+#cmakedefine HAVE_SYS_DIR_H 1
 
 /* Define to 1 if you have the <sys/ipc.h> header file. */
-#define HAVE_SYS_IPC_H 1
+#cmakedefine HAVE_SYS_IPC_H 1
 
 /* Define to 1 if you have the <sys/mman.h> header file. */
-#define HAVE_SYS_MMAN_H 1
+#cmakedefine HAVE_SYS_MMAN_H 1
 
 /* Define to 1 if you have the <sys/ndir.h> header file, and it defines `DIR'.
    */
-/* #undef HAVE_SYS_NDIR_H */
+#cmakedefine HAVE_SYS_NDIR_H 1
 
 /* Define to 1 if you have the <sys/params.h> header file. */
-/* #undef HAVE_SYS_PARAMS_H */
+#cmakedefine HAVE_SYS_PARAMS_H 1
 
 /* Define to 1 if you have the <sys/shm.h> header file. */
-#define HAVE_SYS_SHM_H 1
+#cmakedefine HAVE_SYS_SHM_H 1
 
 /* Define to 1 if you have the <sys/stat.h> header file. */
-#define HAVE_SYS_STAT_H 1
+#cmakedefine HAVE_SYS_STAT_H 1
 
 /* Define to 1 if you have the <sys/time.h> header file. */
-#define HAVE_SYS_TIME_H 1
+#cmakedefine HAVE_SYS_TIME_H 1
 
 /* Define to 1 if you have the <sys/types.h> header file. */
-#define HAVE_SYS_TYPES_H 1
+#cmakedefine HAVE_SYS_TYPES_H 1
 
 /* Define to 1 if you have <sys/wait.h> that is POSIX.1 compatible. */
-#define HAVE_SYS_WAIT_H 1
+#cmakedefine HAVE_SYS_WAIT_H 1
 
 /* Define if you have libtiff. */
 #define HAVE_TIFF 1
@@ -270,19 +270,19 @@
 #define HAVE_TYPENAME 1
 
 /* Define to 1 if you have the <unistd.h> header file. */
-#define HAVE_UNISTD_H 1
+#cmakedefine HAVE_UNISTD_H 1
 
 /* Define if you have unsetenv */
-#define HAVE_UNSETENV 1
+#cmakedefine HAVE_UNSETENV 1
 
 /* Define if you have the unsetenv prototype */
-#define HAVE_UNSETENV_PROTO 1
+#cmakedefine HAVE_UNSETENV_PROTO 1
 
 /* Define if you have usleep */
-#define HAVE_USLEEP 1
+#cmakedefine HAVE_USLEEP 1
 
 /* Define if you have the usleep prototype */
-#define HAVE_USLEEP_PROTO 1
+#cmakedefine HAVE_USLEEP_PROTO 1
 
 /* Define if we have va_copy */
 /* #undef HAVE_VA_COPY */
@@ -294,10 +294,10 @@
 /* #undef HAVE_VFORK_H */
 
 /* Define to 1 if you have the `vsnprintf' function. */
-#define HAVE_VSNPRINTF 1
+#cmakedefine HAVE_VSNPRINTF 1
 
 /* Define to 1 if you have the <wchar.h> header file. */
-#define HAVE_WCHAR_H 1
+#cmakedefine HAVE_WCHAR_H 1
 
 /* Define to 1 if the system has the type `wchar_t'. */
 #define HAVE_WCHAR_T 1
@@ -306,7 +306,7 @@
 #define HAVE_WCRTOMB 1
 
 /* Define to 1 if you have the <wctype.h> header file. */
-#define HAVE_WCTYPE_H 1
+#cmakedefine HAVE_WCTYPE_H 1
 
 /* Define to 1 if `fork' works. */
 /* #undef HAVE_WORKING_FORK */
@@ -321,7 +321,7 @@
 #define HAVE___VA_COPY 1
 
 /* Suffix for lib directories */
-#define KDELIBSUFF ""
+#define KDELIBSUFF "${KDELIBSUFF}"
 
 /* Defines if force the use DRM in kpdf */
 #define KPDF_FORCE_DRM 0
