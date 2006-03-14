@@ -65,6 +65,12 @@ else(CARBON_FOUND)
 	set(HAVE_CARBON 0)
 endif(CARBON_FOUND)
 
+if(KDE4_FORCE_KPDF_DRM)
+    set(KPDF_FORCE_DRM 1)
+else(KDE4_FORCE_KPDF_DRM)
+    set(KPDF_FORCE_DRM 0)
+endif(KDE4_FORCE_KPDF_DRM)
+
 #now check for dlfcn.h using the cmake supplied CHECK_include_FILE() macro
 # If definitions like -D_GNU_SOURCE are needed for these checks they
 # should be added to _KDE4_PLATFORM_DEFINITIONS when it is originally

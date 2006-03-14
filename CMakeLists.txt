@@ -18,6 +18,8 @@ find_package(KDE4 REQUIRED)
 find_package(Perl REQUIRED)
 find_package(ZLIB REQUIRED)
 
+macro_optional_find_package(KPDF)
+
 if (APPLE)
    find_package(Carbon REQUIRED)
 endif (APPLE)

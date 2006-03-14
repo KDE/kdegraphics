@@ -263,6 +263,8 @@
 /* Define to 1 if you have <sys/wait.h> that is POSIX.1 compatible. */
 #cmakedefine HAVE_SYS_WAIT_H 1
 
+#cmakedefine KPDF_FORCE_DRM 1
+
 /* Define if you have libtiff. */
 #define HAVE_TIFF 1
 
