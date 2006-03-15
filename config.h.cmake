@@ -266,7 +266,7 @@
 #cmakedefine KPDF_FORCE_DRM 1
 
 /* Define if you have libtiff. */
-#define HAVE_TIFF 1
+#cmakedefine HAVE_TIFF 1
 
 /* define if the compiler recognizes typename */
 #define HAVE_TYPENAME 1
@@ -293,7 +293,7 @@
 #define HAVE_VFORK 1
 
 /* Define to 1 if you have the <vfork.h> header file. */
-/* #undef HAVE_VFORK_H */
+#cmakedefine HAVE_VFORK_H 1
 
 /* Define to 1 if you have the `vsnprintf' function. */
 #cmakedefine HAVE_VSNPRINTF 1

@@ -113,6 +113,7 @@ check_include_files(sys/time.h    HAVE_SYS_TIME_H)
 check_include_files(sys/wait.h HAVE_SYS_WAIT_H)
 check_include_files(wchar.h HAVE_WCHAR_H)
 check_include_files(wctype.h HAVE_WCTYPE_H)
+check_include_files(vfork.h HAVE_VFORK_H)
 
 check_function_exists(mkstemp    HAVE_MKSTEMP)
 check_function_exists(mkstemps   HAVE_MKSTEMPS)
