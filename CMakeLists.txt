@@ -41,6 +41,11 @@ include_directories(
   ${KDE4_INCLUDE_DIRS} ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR}
 )
 
+set(libdscparse_SRCS 
+	${CMAKE_SOURCE_DIR}/kghostview/dscparse.cpp 
+	${CMAKE_SOURCE_DIR}/kghostview/dscparse_adapter.cpp 
+)
+
 add_subdirectory(doc)
 add_subdirectory(kamera)
 add_subdirectory(kcoloredit)
@@ -52,7 +57,7 @@ add_subdirectory(kiconedit)
 add_subdirectory(kmrml)
 add_subdirectory(kolourpaint)
 add_subdirectory(kooka)
-#add_subdirectory(kpdf)
+add_subdirectory(kpdf)
 add_subdirectory(kpovmodeler)
 add_subdirectory(kruler)
 add_subdirectory(ksnapshot)
