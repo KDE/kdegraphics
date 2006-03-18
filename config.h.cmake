@@ -263,7 +263,6 @@
 /* Define to 1 if you have <sys/wait.h> that is POSIX.1 compatible. */
 #cmakedefine HAVE_SYS_WAIT_H 1
 
-#cmakedefine KPDF_FORCE_DRM 1
 
 /* Define if you have libtiff. */
 #cmakedefine HAVE_TIFF 1
@@ -326,7 +325,7 @@
 #define KDELIBSUFF "${KDELIBSUFF}"
 
 /* Defines if force the use DRM in kpdf */
-#define KPDF_FORCE_DRM 0
+#cmakedefine KPDF_FORCE_DRM 1
 
 /* Defines if use multithreading in xpdf code inside kpdf */
 #define MULTITHREADED 0
