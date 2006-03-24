@@ -19,7 +19,7 @@ find_package(Perl REQUIRED)
 find_package(ZLIB REQUIRED)
 
 macro_optional_find_package(KPDF)
-
+macro_optional_find_package(Gphoto2)
 if (APPLE)
    find_package(Carbon REQUIRED)
 endif (APPLE)
@@ -47,7 +47,11 @@ set(libdscparse_SRCS
 )
 
 add_subdirectory(doc)
-add_subdirectory(kamera)
+
+if(KDE4_GPHOTO2)
+	add_subdirectory(kamera)
+endif(KDE4_GPHOTO2)
+
 add_subdirectory(kcoloredit)
 add_subdirectory(kfax)
 add_subdirectory(kfile-plugins)
