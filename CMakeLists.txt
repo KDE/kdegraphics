@@ -20,6 +20,8 @@ find_package(ZLIB REQUIRED)
 
 macro_optional_find_package(KPDF)
 macro_optional_find_package(Gphoto2)
+macro_optional_find_package(Sane)
+
 if (APPLE)
    find_package(Carbon REQUIRED)
 endif (APPLE)
@@ -49,8 +51,14 @@ set(libdscparse_SRCS
 add_subdirectory(doc)
 
 if(KDE4_GPHOTO2)
-	add_subdirectory(kamera)
+   add_subdirectory(kamera)
 endif(KDE4_GPHOTO2)
+
+
+if (SANE_FOUND)
+   add_subdirectory(libkscan)
+   add_subdirectory(kooka)
+endif (SANE_FOUND)
 
 add_subdirectory(kcoloredit)
 add_subdirectory(kfax)
@@ -60,16 +68,14 @@ add_subdirectory(kghostview)
 add_subdirectory(kiconedit)
 add_subdirectory(kmrml)
 add_subdirectory(kolourpaint)
-add_subdirectory(kooka)
 add_subdirectory(kpdf)
 add_subdirectory(kpovmodeler)
 add_subdirectory(kruler)
 add_subdirectory(ksnapshot)
 add_subdirectory(kuickshow)
 #add_subdirectory(kviewshell)
-add_subdirectory(libkscan)
 
-MESSAGE(STATUS "Perhaps not install FindKDE4. It will conflict when we install with rpm/deb package")
+message(STATUS "Perhaps not install FindKDE4. It will conflict when we install with rpm/deb package")
 add_subdirectory( cmake )
 
 kde4_create_doxygen_docs(  )
