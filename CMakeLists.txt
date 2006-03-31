@@ -13,6 +13,9 @@ include(CTest)
 # generate non-quiet makefiles
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
+# Use colors
+set(CMAKE_COLOR_MAKEFILE ON)
+
 # search packages used by KDE
 find_package(KDE4 REQUIRED)
 find_package(Perl REQUIRED)
