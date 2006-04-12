@@ -118,6 +118,8 @@ check_include_files(vfork.h HAVE_VFORK_H)
 check_function_exists(mkstemp    HAVE_MKSTEMP)
 check_function_exists(mkstemps   HAVE_MKSTEMPS)
 
+check_library_exists(crypt crypt "" HAVE_CRYPT)
+
 check_function_exists(_NSGetEnviron   HAVE_NSGETENVIRON)
 check_function_exists(initgroups HAVE_INITGROUPS)
 check_function_exists(getpagesize HAVE_GETPAGESIZE)
@@ -129,6 +131,7 @@ check_function_exists(unsetenv   HAVE_UNSETENV)
 check_function_exists(usleep     HAVE_USLEEP)
 
 check_symbol_exists(gethostname     "unistd.h"                 HAVE_GETHOSTNAME)
+check_symbol_exists(iswspace "wctype.h" HAVE_ISWSPACE)
 check_symbol_exists(res_init        "sys/types.h;netinet/in.h;arpa/nameser.h;resolv.h" HAVE_RES_INIT)
 check_symbol_exists(snprintf        "stdio.h"                  HAVE_SNPRINTF)
 check_symbol_exists(vsnprintf       "stdio.h"                  HAVE_VSNPRINTF)

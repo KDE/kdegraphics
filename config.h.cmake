@@ -24,7 +24,7 @@
 #cmakedefine HAVE_CRT_EXTERNS_H 1
 
 /* Defines if your system has the crypt function */
-#define HAVE_CRYPT 1
+#cmakedefine HAVE_CRYPT 1
 
 /* Define to 1 if you have the <dirent.h> header file, and it defines `DIR'.
    */
@@ -91,7 +91,7 @@
 #cmakedefine HAVE_INTTYPES_H 1
 
 /* Define to 1 if you have the `iswspace' function. */
-#define HAVE_ISWSPACE 1
+#cmakedefine HAVE_ISWSPACE 1
 
 /* Define if you have the IJG JPEG library. */
 #cmakedefine HAVE_JPEG 1
