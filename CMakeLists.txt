@@ -63,7 +63,7 @@ add_subdirectory(kpovmodeler)
 add_subdirectory(kruler)
 add_subdirectory(ksnapshot)
 add_subdirectory(kuickshow)
-#add_subdirectory(kviewshell)
+add_subdirectory(kviewshell)
 
 add_subdirectory( cmake )
 
