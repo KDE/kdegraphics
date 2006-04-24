@@ -44,8 +44,9 @@ endif(KDE4_GPHOTO2)
 
 
 if (SANE_FOUND)
-   add_subdirectory(libkscan)
-   add_subdirectory(kooka)
+   MESSAGE(STATUS "port Kooka!")
+   #add_subdirectory(libkscan)
+   #add_subdirectory(kooka)
 endif (SANE_FOUND)
 
 add_subdirectory(kcoloredit)
