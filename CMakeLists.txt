@@ -7,6 +7,7 @@ find_package(KDE4 REQUIRED)
 include(KDE4Defaults)
 find_package(Perl REQUIRED)
 find_package(ZLIB REQUIRED)
+find_package(FreeType2 REQUIRED)
 
 macro_optional_find_package(KPDF)
 macro_optional_find_package(Gphoto2)
