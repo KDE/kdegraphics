@@ -69,5 +69,4 @@ add_subdirectory(kviewshell)
 
 add_subdirectory( cmake )
 
-kde4_create_doxygen_docs(  )
 
