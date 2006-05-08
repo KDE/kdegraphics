@@ -6,44 +6,17 @@ include(CheckFunctionExists)
 include(CheckLibraryExists)
 include(CheckPrototypeExists)
 include(CheckTypeSize)
+include(MacroBoolTo01)
 
 # The FindKDE4.cmake module sets _KDE4_PLATFORM_DEFINITIONS with
 # definitions like _GNU_SOURCE that are needed on each platform.
 set(CMAKE_REQUIRED_DEFINITIONS ${_KDE4_PLATFORM_DEFINITIONS})
 
-#check for libz using the cmake supplied FindZLIB.cmake
-if(ZLIB_FOUND)
-   set(HAVE_LIBZ 1)
-else(ZLIB_FOUND)
-   set(HAVE_LIBZ 0)
-endif(ZLIB_FOUND)
-
-if(JPEG_FOUND)
-   set(HAVE_LIBJPEG 1)
-else(JPEG_FOUND)
-   set(HAVE_LIBJPEG 0)
-endif(JPEG_FOUND)
-
-#check for png
-if(PNG_FOUND)
-   set(HAVE_LIBPNG 1)
-else(PNG_FOUND)
-   set(HAVE_LIBPNG 0)
-endif(PNG_FOUND)
-
-#check for tiff
-if(TIFF_FOUND)
-   set(HAVE_LIBTIFF 1)
-else(TIFF_FOUND)
-   set(HAVE_LIBTIFF 0)
-endif(TIFF_FOUND)
-
-#check for exr
-if(OPENEXR_FOUND)
-   set(HAVE_EXR 1)
-else(OPENEXR_FOUND)
-   set(HAVE_EXR 0)
-endif(OPENEXR_FOUND)
+macro_bool_to_01(ZLIB_FOUND HAVE_LIBZ)
+macro_bool_to_01(JPEG_FOUND HAVE_LIBJPEG)
+macro_bool_to_01(PNG_FOUND HAVE_LIBPNG)
+macro_bool_to_01(TIFF_FOUND HAVE_LIBTIFF)
+macro_bool_to_01(OPENEXR_FOUND HAVE_EXR)
 
 if(BZIP2_FOUND)
    set(HAVE_BZIP2_SUPPORT 1)
@@ -53,24 +26,10 @@ if(BZIP2_FOUND)
 else(BZIP2_FOUND)
    set(HAVE_BZIP2_SUPPORT 0)
 endif(BZIP2_FOUND)
+macro_bool_to_01(LIBART_FOUND HAVE_LIBART)
+macro_bool_to_01(CARBON_FOUND HAVE_CARBON)
+macro_bool_to_01(KDE4_FORCE_KPDF_DRM KPDF_FORCE_DRM)
 
-if(LIBART_FOUND)
-   set(HAVE_LIBART 1)
-else(LIBART_FOUND)
-   set(HAVE_LIBART 0)
-endif(LIBART_FOUND)
-
-if(CARBON_FOUND)
-	set(HAVE_CARBON 1)
-else(CARBON_FOUND)
-	set(HAVE_CARBON 0)
-endif(CARBON_FOUND)
-
-if(KDE4_FORCE_KPDF_DRM)
-    set(KPDF_FORCE_DRM 1)
-else(KDE4_FORCE_KPDF_DRM)
-    set(KPDF_FORCE_DRM 0)
-endif(KDE4_FORCE_KPDF_DRM)
 
 #now check for dlfcn.h using the cmake supplied CHECK_include_FILE() macro
 # If definitions like -D_GNU_SOURCE are needed for these checks they
