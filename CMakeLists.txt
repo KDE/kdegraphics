@@ -58,6 +58,8 @@ add_subdirectory(kghostview)
 add_subdirectory(kiconedit)
 add_subdirectory(kmrml)
 add_subdirectory(kolourpaint)
+MESSAGE(STATUS "port kpovmodeler kpdf")
+
 #add_subdirectory(kpdf)
 #add_subdirectory(kpovmodeler)
 add_subdirectory(kruler)
