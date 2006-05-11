@@ -46,7 +46,7 @@ endif(KDE4_GPHOTO2 AND GPHOTO2_FOUND)
 
 if (SANE_FOUND)
    MESSAGE(STATUS "port Kooka!")
-   #add_subdirectory(libkscan)
+   add_subdirectory(libkscan)
    #add_subdirectory(kooka)
 endif (SANE_FOUND)
 
