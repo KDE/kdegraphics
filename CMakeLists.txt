@@ -61,7 +61,7 @@ add_subdirectory(kolourpaint)
 MESSAGE(STATUS "port kpovmodeler kpdf")
 
 #add_subdirectory(kpdf)
-add_subdirectory(kpovmodeler)
+#add_subdirectory(kpovmodeler)
 add_subdirectory(kruler)
 add_subdirectory(ksnapshot)
 if (IMLIB_FOUND)
