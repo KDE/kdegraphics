@@ -39,9 +39,9 @@ set(libdscparse_SRCS
 
 add_subdirectory(doc)
 
-if(KDE4_GPHOTO2)
+if(KDE4_GPHOTO2 AND GPHOTO2_FOUND)
    add_subdirectory(kamera)
-endif(KDE4_GPHOTO2)
+endif(KDE4_GPHOTO2 AND GPHOTO2_FOUND)
 
 
 if (SANE_FOUND)
@@ -61,7 +61,7 @@ add_subdirectory(kolourpaint)
 MESSAGE(STATUS "port kpovmodeler kpdf")
 
 #add_subdirectory(kpdf)
-#add_subdirectory(kpovmodeler)
+add_subdirectory(kpovmodeler)
 add_subdirectory(kruler)
 add_subdirectory(ksnapshot)
 if (IMLIB_FOUND)
