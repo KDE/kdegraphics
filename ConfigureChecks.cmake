@@ -28,7 +28,6 @@ else(BZIP2_FOUND)
 endif(BZIP2_FOUND)
 macro_bool_to_01(LIBART_FOUND HAVE_LIBART)
 macro_bool_to_01(CARBON_FOUND HAVE_CARBON)
-macro_bool_to_01(KDE4_FORCE_KPDF_DRM KPDF_FORCE_DRM)
 
 
 #now check for dlfcn.h using the cmake supplied CHECK_include_FILE() macro

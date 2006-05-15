@@ -9,7 +9,6 @@ include (MacroLibrary)
 
 
 find_package(FreeType2 REQUIRED)
-macro_optional_find_package(KPDF)
 macro_optional_find_package(Gphoto2)
 macro_optional_find_package(Sane)
 
