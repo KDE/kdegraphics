@@ -66,9 +66,6 @@
 /* Define to 1 if you have the `getpwuid' function. */
 #define HAVE_GETPWUID 1
 
-/* Defines if you have GL (Mesa, OpenGL, ...) */
-#define HAVE_GL 1
-
 /* Define to 1 if you have the <GL/glu.h> header file. */
 #define HAVE_GL_GLU_H 1
 
