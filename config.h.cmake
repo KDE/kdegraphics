@@ -309,8 +309,6 @@
 /* Define to 1 if `vfork' works. */
 #define HAVE_WORKING_VFORK 1
 
-/* Define to 1 if you have the <X11/extensions/shape.h> header file. */
-#define HAVE_X11_EXTENSIONS_SHAPE_H 1
 
 /* Define if we have __va_copy */
 #define HAVE___VA_COPY 1
