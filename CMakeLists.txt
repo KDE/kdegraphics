@@ -7,12 +7,16 @@ find_package(KDE4 REQUIRED)
 include (KDE4Defaults)
 include (MacroLibrary)
 include (FindQtDBus)
-
+include (MacroLogFeature)
 
 find_package(FreeType2 REQUIRED)
 macro_optional_find_package(Gphoto2)
 macro_optional_find_package(Sane)
 macro_optional_find_package(OpenGL)
+
+MACRO_LOG_FEATURE(GPHOTO2_FOUND "libgphoto2" "Need to build kamera project" "http://heanet.dl.sourceforge.net/sourceforge/gphoto/")
+MACRO_LOG_FEATURE(SANE_FOUND "libsane" "Sane lib is needed to build kooka project" "http://www.sane-project.org/")
+MACRO_LOG_FEATURE(OPENGL_FOUND "libopengl" "OpenGl lib is need to build kpovmodeler project" "http://www.X.org")
 
 # are these two really required ?
 find_package(ZLIB REQUIRED)
@@ -68,4 +72,4 @@ add_subdirectory(kviewshell)
 
 add_subdirectory( cmake )
 
-
+macro_display_feature_log()
