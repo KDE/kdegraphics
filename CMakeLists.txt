@@ -13,9 +13,9 @@ macro_optional_find_package(Gphoto2)
 macro_optional_find_package(Sane)
 macro_optional_find_package(OpenGL)
 
-MACRO_LOG_FEATURE(GPHOTO2_FOUND "libgphoto2" "Need to build kamera project" "http://heanet.dl.sourceforge.net/sourceforge/gphoto/")
-MACRO_LOG_FEATURE(SANE_FOUND "libsane" "Sane lib is needed to build kooka project" "http://www.sane-project.org/")
-MACRO_LOG_FEATURE(OPENGL_FOUND "libopengl" "OpenGl lib is need to build kpovmodeler project" "http://www.X.org")
+MACRO_LOG_FEATURE(GPHOTO2_FOUND "libgphoto2" "Need to build kamera project" "http://heanet.dl.sourceforge.net/sourceforge/gphoto/" FALSE "" "")
+MACRO_LOG_FEATURE(SANE_FOUND "libsane" "Sane lib is needed to build kooka project" "http://www.sane-project.org/" FALSE "" "")
+MACRO_LOG_FEATURE(OPENGL_FOUND "libopengl" "OpenGl lib is need to build kpovmodeler project" "http://www.X.org" FALSE "" "")
 
 # are these two really required ?
 find_package(ZLIB REQUIRED)
