@@ -12,10 +12,12 @@ find_package(FreeType2 REQUIRED)
 macro_optional_find_package(Gphoto2)
 macro_optional_find_package(Sane)
 macro_optional_find_package(OpenGL)
+macro_optional_find_package(IMLIB)
 
 MACRO_LOG_FEATURE(GPHOTO2_FOUND "libgphoto2" "Need to build kamera project" "http://heanet.dl.sourceforge.net/sourceforge/gphoto/" FALSE "" "")
 MACRO_LOG_FEATURE(SANE_FOUND "libsane" "Sane lib is needed to build kooka project" "http://www.sane-project.org/" FALSE "" "")
-MACRO_LOG_FEATURE(OPENGL_FOUND "libopengl" "OpenGl lib is need to build kpovmodeler project" "http://www.X.org" FALSE "" "")
+MACRO_LOG_FEATURE(OPENGL_FOUND "libopengl" "OpenGl lib is need to build kpovmodeler project" "http://www.X.org/" FALSE "" "")
+MACRO_LOG_FEATURE(IMLIB_FOUND "imlib" "imlib is need to build kuickshow project" "http://www.gnome.org/" FALSE "" "")
 
 # are these two really required ?
 find_package(ZLIB REQUIRED)
@@ -66,7 +68,8 @@ endif(OPENGL_FOUND AND OPENGL_GLU_FOUND)
 add_subdirectory(kruler)
 add_subdirectory(ksnapshot)
 if (IMLIB_FOUND)
-   add_subdirectory(kuickshow)
+   MESSAGE(STATUS "port kuickshow!")
+   #add_subdirectory(kuickshow)
 endif (IMLIB_FOUND)
 add_subdirectory(kviewshell)
 
