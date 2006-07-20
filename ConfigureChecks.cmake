@@ -86,8 +86,6 @@ check_function_exists(initgroups HAVE_INITGROUPS)
 check_function_exists(getpagesize HAVE_GETPAGESIZE)
 check_function_exists(mmap            HAVE_MMAP)
 check_function_exists(setenv     HAVE_SETENV)
-check_function_exists(strlcat    HAVE_STRLCAT)
-check_function_exists(strlcpy    HAVE_STRLCPY)
 check_function_exists(unsetenv   HAVE_UNSETENV)
 check_function_exists(usleep     HAVE_USLEEP)
 
@@ -101,8 +99,6 @@ check_prototype_exists(res_init "sys/types.h;netinet/in.h;arpa/nameser.h;resolv.
 check_prototype_exists(initgroups "unistd.h;sys/types.h;unistd.h;grp.h" HAVE_INITGROUPS_PROTO)
 check_prototype_exists(setenv stdlib.h HAVE_SETENV_PROTO)
 check_prototype_exists(mkstemps "stdlib.h;unistd.h" HAVE_MKSTEMPS_PROTO)
-check_prototype_exists(strlcat string.h HAVE_STRLCAT_PROTO)
-check_prototype_exists(strlcpy string.h HAVE_STRLCPY_PROTO)
 check_prototype_exists(unsetenv stdlib.h HAVE_UNSETENV_PROTO)
 check_prototype_exists(usleep unistd.h HAVE_USLEEP_PROTO)
 

@@ -210,18 +210,6 @@
 /* Define to 1 if you have the <string.h> header file. */
 #cmakedefine HAVE_STRING_H 1
 
-/* Define if you have strlcat */
-#cmakedefine HAVE_STRLCAT 1
-
-/* Define if you have the strlcat prototype */
-#cmakedefine HAVE_STRLCAT_PROTO 1
-
-/* Define if you have strlcpy */
-#cmakedefine HAVE_STRLCPY 1
-
-/* Define if you have the strlcpy prototype */
-#cmakedefine HAVE_STRLCPY_PROTO 1
-
 /* Define to 1 if you have the <sys/bitypes.h> header file. */
 #cmakedefine HAVE_SYS_BITYPES_H 1
 
@@ -439,31 +427,6 @@ int setenv (const char *, const char *, int);
 }
 #endif
 #endif
-
-
-
-#if !defined(HAVE_STRLCAT_PROTO)
-#ifdef __cplusplus
-extern "C" {
-#endif
-unsigned long strlcat(char*, const char*, unsigned long);
-#ifdef __cplusplus
-}
-#endif
-#endif
-
-
-
-#if !defined(HAVE_STRLCPY_PROTO)
-#ifdef __cplusplus
-extern "C" {
-#endif
-unsigned long strlcpy(char*, const char*, unsigned long);
-#ifdef __cplusplus
-}
-#endif
-#endif
-
 
 
 #if !defined(HAVE_UNSETENV_PROTO)
