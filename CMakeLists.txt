@@ -16,7 +16,7 @@ macro_optional_find_package(IMLIB)
 
 MACRO_LOG_FEATURE(GPHOTO2_FOUND "libgphoto2" "Need to build kamera project" "http://heanet.dl.sourceforge.net/sourceforge/gphoto/" FALSE "" "")
 MACRO_LOG_FEATURE(SANE_FOUND "libsane" "Sane lib is needed to build kooka project" "http://www.sane-project.org/" FALSE "" "")
-MACRO_LOG_FEATURE(OPENGL_FOUND "libopengl" "OpenGl lib is need to build kpovmodeler project" "http://www.X.org/" FALSE "" "")
+MACRO_LOG_FEATURE(OPENGL_FOUND "libopengl" "OpenGL lib is need to build kpovmodeler project" "http://www.X.org/" FALSE "" "")
 MACRO_LOG_FEATURE(IMLIB_FOUND "imlib" "imlib is need to build kuickshow project" "http://www.gnome.org/" FALSE "" "")
 
 # are these two really required ?
