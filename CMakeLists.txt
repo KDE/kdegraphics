@@ -6,7 +6,8 @@ set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/modules )
 find_package(KDE4 REQUIRED)
 include (KDE4Defaults)
 include (MacroLibrary)
-include (MacroLogFeature)
+
+macro_init_log_feature()
 
 find_package(FreeType2 REQUIRED)
 macro_optional_find_package(Gphoto2)
