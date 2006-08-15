@@ -7,8 +7,6 @@ find_package(KDE4 REQUIRED)
 include (KDE4Defaults)
 include (MacroLibrary)
 
-macro_init_log_feature()
-
 find_package(FreeType2 REQUIRED)
 macro_optional_find_package(Gphoto2)
 macro_optional_find_package(Sane)
