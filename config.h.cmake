@@ -11,9 +11,6 @@
 /* Define to 1 if you have the <Carbon/Carbon.h> header file. */
 #cmakedefine HAVE_CARBON_CARBON_H 1
 
-/* Define if you have the CoreAudio API */
-/* #undef HAVE_COREAUDIO */
-
 /* Define if cothreads are available. */
 /* #undef HAVE_COTHREAD */
 
@@ -23,15 +20,9 @@
 /* Define to 1 if you have the <crt_externs.h> header file. */
 #cmakedefine HAVE_CRT_EXTERNS_H 1
 
-/* Defines if your system has the crypt function */
-#cmakedefine HAVE_CRYPT 1
-
 /* Define to 1 if you have the <dirent.h> header file, and it defines `DIR'.
    */
 #cmakedefine HAVE_DIRENT_H 1
-
-/* Define to 1 if you have the <dlfcn.h> header file. */
-#cmakedefine HAVE_DLFCN_H 1
 
 /* define if the compiler supports exceptions */
 /* #undef HAVE_EXCEPTIONS */
@@ -84,9 +75,6 @@
 /* Define to 1 if you have the <iconv.h> header file. */
 #cmakedefine HAVE_ICONV_H 1
 
-/* Define to 1 if you have the <inttypes.h> header file. */
-#cmakedefine HAVE_INTTYPES_H 1
-
 /* Define to 1 if you have the `iswspace' function. */
 #cmakedefine HAVE_ISWSPACE 1
 
@@ -114,9 +102,6 @@
 /* Define if you have libz */
 #cmakedefine HAVE_LIBZ 1
 
-/* Define to 1 if you have the <limits.h> header file. */
-#cmakedefine HAVE_LIMITS_H 1
-
 /* Define to 1 if the system has the type `long long int'. */
 #define HAVE_LONG_LONG_INT 1
 
@@ -125,9 +110,6 @@
 
 /* define if the compiler supports member templates */
 #define HAVE_MEMBER_TEMPLATES 1
-
-/* Define to 1 if you have the <memory.h> header file. */
-#cmakedefine HAVE_MEMORY_H 1
 
 /* Define to 1 if you have the `mkstemp' function. */
 #cmakedefine HAVE_MKSTEMP 1
@@ -149,12 +131,6 @@
 
 /* Define if your system needs _NSGetEnviron to set up the environment */
 #cmakedefine HAVE_NSGETENVIRON 1
-
-/* Define to 1 if you have the <paper.h> header file. */
-#cmakedefine HAVE_PAPER_H 1
-
-/* Define to 1 if you have the <paths.h> header file. */
-#cmakedefine HAVE_PATHS_H 1
 
 /* Define to 1 if you have the `popen' function. */
 #define HAVE_POPEN 1
@@ -183,17 +159,11 @@
 /* Define if you have a STL implementation by SGI */
 #define HAVE_SGI_STL 1
 
-/* Define to 1 if you have the `snprintf' function. */
-#cmakedefine HAVE_SNPRINTF 1
-
 /* Define to 1 if you have the <sstream> header file. */
 #cmakedefine HAVE_SSTREAM 1
 
 /* define if the compiler comes with standard includes */
 #define HAVE_STDINCLUDES 1
-
-/* Define to 1 if you have the <stdint.h> header file. */
-#cmakedefine HAVE_STDINT_H 1
 
 /* Define to 1 if you have the <stdlib.h> header file. */
 #cmakedefine HAVE_STDLIB_H 1
@@ -204,21 +174,9 @@
 /* Define to 1 if you have the `strftime' function. */
 #define HAVE_STRFTIME 1
 
-/* Define to 1 if you have the <strings.h> header file. */
-#cmakedefine HAVE_STRINGS_H 1
-
-/* Define to 1 if you have the <string.h> header file. */
-#cmakedefine HAVE_STRING_H 1
-
-/* Define to 1 if you have the <sys/bitypes.h> header file. */
-#cmakedefine HAVE_SYS_BITYPES_H 1
-
 /* Define to 1 if you have the <sys/dir.h> header file, and it defines `DIR'.
    */
 #cmakedefine HAVE_SYS_DIR_H 1
-
-/* Define to 1 if you have the <sys/ipc.h> header file. */
-#cmakedefine HAVE_SYS_IPC_H 1
 
 /* Define to 1 if you have the <sys/mman.h> header file. */
 #cmakedefine HAVE_SYS_MMAN_H 1
@@ -227,24 +185,8 @@
    */
 #cmakedefine HAVE_SYS_NDIR_H 1
 
-/* Define to 1 if you have the <sys/params.h> header file. */
-#cmakedefine HAVE_SYS_PARAMS_H 1
-
-/* Define to 1 if you have the <sys/shm.h> header file. */
-#cmakedefine HAVE_SYS_SHM_H 1
-
-/* Define to 1 if you have the <sys/stat.h> header file. */
-#cmakedefine HAVE_SYS_STAT_H 1
-
 /* Define to 1 if you have the <sys/time.h> header file. */
 #cmakedefine HAVE_SYS_TIME_H 1
-
-/* Define to 1 if you have the <sys/types.h> header file. */
-#cmakedefine HAVE_SYS_TYPES_H 1
-
-/* Define to 1 if you have <sys/wait.h> that is POSIX.1 compatible. */
-#cmakedefine HAVE_SYS_WAIT_H 1
-
 
 /* Define if you have libtiff. */
 #cmakedefine HAVE_TIFF 1
@@ -273,9 +215,6 @@
 /* Define to 1 if you have the `vfork' function. */
 #define HAVE_VFORK 1
 
-/* Define to 1 if you have the <vfork.h> header file. */
-#cmakedefine HAVE_VFORK_H 1
-
 /* Define to 1 if you have the `vsnprintf' function. */
 #cmakedefine HAVE_VSNPRINTF 1
 
@@ -300,9 +239,6 @@
 
 /* Define if we have __va_copy */
 #define HAVE___VA_COPY 1
-
-/* Suffix for lib directories */
-#define KDELIBSUFF "${KDELIBSUFF}"
 
 /* Defines if force the use DRM in kpdf */
 #cmakedefine KPDF_FORCE_DRM 1
