@@ -57,7 +57,10 @@ if (SANE_FOUND)
 endif (SANE_FOUND)
 
 add_subdirectory(kcoloredit)
-add_subdirectory(kfax)
+if(Q_WS_X11)
+    add_subdirectory(kfax)
+endif(Q_WS_X11)
+
 add_subdirectory(kfile-plugins)
 if (XVIDMODEEXTENSIONS_FOUND)
    add_subdirectory(kgamma)
