@@ -14,13 +14,12 @@ macro_optional_find_package(OpenGL)
 macro_optional_find_package(IMLIB)
 macro_optional_find_package(Kadmos)
 macro_optional_find_package(Freetype)
-macro_optional_find_package(XVidModeExtensions)
 
 MACRO_LOG_FEATURE(GPHOTO2_FOUND "libgphoto2" "Required to build kamera project" "http://heanet.dl.sourceforge.net/sourceforge/gphoto/" FALSE "" "")
 MACRO_LOG_FEATURE(SANE_FOUND "libsane" "Sane lib is needed to build kooka project" "http://www.sane-project.org/" FALSE "" "")
 MACRO_LOG_FEATURE(OPENGL_FOUND "libopengl" "OpenGL lib is needed to build kpovmodeler project" "http://www.X.org/" FALSE "" "")
 MACRO_LOG_FEATURE(IMLIB_FOUND "imlib" "imlib is needed to build kuickshow project" "http://freshmeat.net/projects/imlib/" FALSE "" "")
-MACRO_LOG_FEATURE(XVIDMODEEXTENSIONS_FOUND "xf86vmode.h" "xvidmode extensions are needed to build kgamma" "http://www.x.org/" FALSE "" "")
+MACRO_LOG_FEATURE(X11_xf86vmode_FOUND "xf86vmode.h" "xvidmode extensions are needed to build kgamma" "http://www.x.org/" FALSE "" "")
 
 # are these two really required ?
 find_package(ZLIB REQUIRED)
