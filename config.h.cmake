@@ -55,7 +55,7 @@
 #cmakedefine HAVE_GETPAGESIZE 1
 
 /* Define to 1 if you have the `getpwuid' function. */
-#define HAVE_GETPWUID 1
+#cmakedefine HAVE_GETPWUID 1
 
 /* Define to 1 if you have the <GL/glu.h> header file. */
 #define HAVE_GL_GLU_H 1

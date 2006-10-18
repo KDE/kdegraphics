@@ -71,6 +71,7 @@ check_function_exists(unsetenv   HAVE_UNSETENV)
 check_function_exists(usleep     HAVE_USLEEP)
 
 check_symbol_exists(gethostname     "unistd.h"                 HAVE_GETHOSTNAME)
+check_symbol_exists(getpwuid     "pwd.h"                 HAVE_GETPWUID)
 check_symbol_exists(iswspace "wctype.h" HAVE_ISWSPACE)
 check_symbol_exists(res_init        "sys/types.h;netinet/in.h;arpa/nameser.h;resolv.h" HAVE_RES_INIT)
 check_symbol_exists(vsnprintf       "stdio.h"                  HAVE_VSNPRINTF)
