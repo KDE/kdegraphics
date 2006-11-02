@@ -66,9 +66,6 @@
 /* Define to 1 if you have the <GL/gl.h> header file. */
 #define HAVE_GL_GL_H 1
 
-/* Define if you have gPhoto2 installed */
-#define HAVE_GPHOTO2 1
-
 /* Define to 1 if you have the `iconv' function. */
 #define HAVE_ICONV 1
 
