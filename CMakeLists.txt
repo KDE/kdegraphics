@@ -78,7 +78,7 @@ if (IMLIB_FOUND)
    MESSAGE(STATUS "port kuickshow!")
    #add_subdirectory(kuickshow)
 endif (IMLIB_FOUND)
-add_subdirectory(kviewshell)
+add_subdirectory(ligature)
 
 add_subdirectory( cmake )
 

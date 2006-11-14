@@ -63,8 +63,8 @@ kdegraphics is a collection of graphic oriented applications:
 * kuickshow
     Fast and comfortable imageviewer.
 
-* kviewshell
-    Generic framework for viewer applications.
+* ligature
+    Document Viewing program; supports document in various formats
 
 * libkscan
     Library to access scanners used by kooka (and koffice), needs SANE to be

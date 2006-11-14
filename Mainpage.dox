@@ -4,9 +4,9 @@
 	* This section contains the KDE online class reference for the current
 	* development version of the KDE graphics package. 
 	*
-	* - <a href="kviewshell/html/index.html"><b>kviewshell</b></a>
-        *   (<a href="kviewshell/html/classes.html">classes</a>)\n
-	*   <i>API for the implementation of kviewshell plugins.</i>
+	* - <a href="ligature/html/index.html"><b>ligature</b></a>
+        *   (<a href="ligature/html/classes.html">classes</a>)\n
+	*   <i>API for the implementation of ligature plugins.</i>
 	*
 	* More information about the KDE architecture in form of
 	* tutorials, HOWTOs,
