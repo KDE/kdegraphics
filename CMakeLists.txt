@@ -38,16 +38,31 @@ configure_file (config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config.h )
 
 
 set(libdscparse_SRCS 
-	${CMAKE_SOURCE_DIR}/kghostview/dscparse.cpp 
-	${CMAKE_SOURCE_DIR}/kghostview/dscparse_adapter.cpp 
-)
+      ${CMAKE_SOURCE_DIR}/kghostview/dscparse.cpp 
+      ${CMAKE_SOURCE_DIR}/kghostview/dscparse_adapter.cpp 
+   )
 
+
+add_subdirectory(cmake)
 add_subdirectory(doc)
+add_subdirectory(kfile-plugins)
+add_subdirectory(kcoloredit)
+add_subdirectory(kiconedit)
+add_subdirectory(kruler)
+add_subdirectory(kolourpaint)
+add_subdirectory(ligature)
+message(STATUS "disable kmrml")
+#add_subdirectory(kmrml)
+
+if(Q_WS_X11)
+    add_subdirectory(kfax)
+    add_subdirectory(ksnapshot)
+    add_subdirectory(kghostview)
+endif(Q_WS_X11)
 
 if(KDE4_GPHOTO2 AND GPHOTO2_FOUND)
    add_subdirectory(kamera)
 endif(KDE4_GPHOTO2 AND GPHOTO2_FOUND)
-
 
 if (SANE_FOUND)
    MESSAGE(STATUS "port Kooka!")
@@ -55,30 +70,17 @@ if (SANE_FOUND)
    #add_subdirectory(kooka)
 endif (SANE_FOUND)
 
-add_subdirectory(kcoloredit)
-if(Q_WS_X11)
-    add_subdirectory(kfax)
-    add_subdirectory(ksnapshot)
-    add_subdirectory(kghostview)
-endif(Q_WS_X11)
-
-add_subdirectory(kfile-plugins)
 if (XVIDMODEEXTENSIONS_FOUND)
    add_subdirectory(kgamma)
 endif (XVIDMODEEXTENSIONS_FOUND)
-add_subdirectory(kiconedit)
-MESSAGE(STATUS "disable kmrml")
-#add_subdirectory(kmrml)
-add_subdirectory(kolourpaint)
+
 if(OPENGL_FOUND AND OPENGL_GLU_FOUND AND FREETYPE_FOUND AND FreeType2_FOUND)
-	add_subdirectory(kpovmodeler)
+   add_subdirectory(kpovmodeler)
 endif(OPENGL_FOUND AND OPENGL_GLU_FOUND AND FREETYPE_FOUND AND FreeType2_FOUND)
-add_subdirectory(kruler)
+
 if (IMLIB_FOUND)
    add_subdirectory(kuickshow)
 endif (IMLIB_FOUND)
-add_subdirectory(ligature)
 
-add_subdirectory( cmake )
 
 macro_display_feature_log()
