@@ -46,7 +46,8 @@ set(libdscparse_SRCS
 
 add_subdirectory(cmake)
 macro_optional_add_subdirectory(doc)
-macro_optional_add_subdirectory(kfile-plugins)
+message(STATUS "!!!!!!!!!!!!!!!!!!!! FIX THE KFILE PLUGINS !!!!!!!!!!!!!!!!!!!!!!!!!")
+#macro_optional_add_subdirectory(kfile-plugins)
 macro_optional_add_subdirectory(kcoloredit)
 macro_optional_add_subdirectory(kiconedit)
 macro_optional_add_subdirectory(kruler)
