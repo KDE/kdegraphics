@@ -12,11 +12,8 @@ include(MacroBoolTo01)
 # definitions like _GNU_SOURCE that are needed on each platform.
 set(CMAKE_REQUIRED_DEFINITIONS ${_KDE4_PLATFORM_DEFINITIONS})
 
-macro_bool_to_01(ZLIB_FOUND HAVE_LIBZ)
 macro_bool_to_01(JPEG_FOUND HAVE_LIBJPEG)
-macro_bool_to_01(PNG_FOUND HAVE_LIBPNG)
 macro_bool_to_01(TIFF_FOUND HAVE_LIBTIFF)
-macro_bool_to_01(OPENEXR_FOUND HAVE_EXR)
 macro_bool_to_01(X11_Xshape_FOUND HAVE_X11_EXTENSIONS_SHAPE_H)
 
 
