@@ -83,5 +83,6 @@ if (IMLIB_FOUND)
    macro_optional_add_subdirectory(kuickshow)
 endif (IMLIB_FOUND)
 
+macro_optional_add_subdirectory(okular)
 
 macro_display_feature_log()
