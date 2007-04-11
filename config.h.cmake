@@ -177,12 +177,6 @@
 /* Define if we have __va_copy */
 #define HAVE___VA_COPY 1
 
-/* Defines if force the use DRM in kpdf */
-#cmakedefine KPDF_FORCE_DRM 1
-
-/* Defines if use multithreading in xpdf code inside kpdf */
-#define MULTITHREADED 0
-
 /* Define to 1 if you have the ANSI C header files. */
 #define STDC_HEADERS 1
 
