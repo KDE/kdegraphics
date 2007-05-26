@@ -5,12 +5,16 @@
 	* development version of the KDE graphics package. 
 	*
 	* - <a href="ligature/html/index.html"><b>ligature</b></a>
-        *   (<a href="ligature/html/classes.html">classes</a>)\n
+	*   (<a href="ligature/html/classes.html">classes</a>)\n
 	*   <i>API for the implementation of ligature plugins.</i>
+	* - <a href="okular/html/index.html"><b>okular</b></a>
+	*   (<a href="okular/html/classes.html">classes</a>)\n
+	*   <i>API for document plugins .</i>
 	*
 	* More information about the KDE architecture in form of
 	* tutorials, HOWTOs,
 	* and FAQs can be found at
-	* the <a href="http://developer.kde.org">KDE Developer's corner</a>.
+	* the <a href="http://techbase.kde.org">KDE TechBase</a>.
 	*/
-
+// DOXYGEN_VERSION=4.0
+// DOXYGEN_NAME=kdegraphics
