@@ -9,7 +9,7 @@
 	*   <i>API for the implementation of ligature plugins.</i>
 	* - <a href="okular/html/index.html"><b>okular</b></a>
 	*   (<a href="okular/html/classes.html">classes</a>)\n
-	*   <i>API for document plugins .</i>
+	*   <i>API for document plugins (aka backends) for okular.</i>
 	*
 	* More information about the KDE architecture in form of
 	* tutorials, HOWTOs,
