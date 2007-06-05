@@ -23,6 +23,7 @@ MACRO_LOG_FEATURE(SANE_FOUND "libsane" "Sane lib is needed to build kooka projec
 MACRO_LOG_FEATURE(OPENGL_FOUND "libopengl" "OpenGL lib is needed to build kpovmodeler project" "http://www.X.org/" FALSE "" "")
 MACRO_LOG_FEATURE(IMLIB_FOUND "imlib" "imlib is needed to build kuickshow project" "http://freshmeat.net/projects/imlib/" FALSE "" "")
 MACRO_LOG_FEATURE(X11_xf86vmode_FOUND "xf86vmode.h" "xvidmode extensions are needed to build kgamma" "http://www.x.org/" FALSE "" "")
+MACRO_LOG_FEATURE(EXIV2_FOUND "exiv2" "The exiv2 library is needed to build gwenview. Gwenview will not be built without it." "http://www.exiv2.org/" FALSE "" "")
 
 # are these two really required ?
 find_package(ZLIB REQUIRED)
