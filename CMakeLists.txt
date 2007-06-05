@@ -16,6 +16,7 @@ macro_optional_find_package(IMLIB)
 macro_optional_find_package(Kadmos)
 macro_optional_find_package(Freetype)
 macro_optional_find_package(Exiv2)
+macro_optional_find_package(JPEG)
 
 MACRO_LOG_FEATURE(GPHOTO2_FOUND "libgphoto2" "Required to build kamera project" "http://heanet.dl.sourceforge.net/sourceforge/gphoto/" FALSE "" "")
 MACRO_LOG_FEATURE(SANE_FOUND "libsane" "Sane lib is needed to build kooka project" "http://www.sane-project.org/" FALSE "" "")
@@ -82,9 +83,9 @@ if (IMLIB_FOUND)
    macro_optional_add_subdirectory(kuickshow)
 endif (IMLIB_FOUND)
 
-if (EXIV2_FOUND)
+if (EXIV2_FOUND AND JPEG_FOUND)
    macro_optional_add_subdirectory(gwenview)
-endif (EXIV2_FOUND)
+endif (EXIV2_FOUND AND JPEG_FOUND)
 
 macro_optional_add_subdirectory(okular)
 
