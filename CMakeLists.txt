@@ -11,14 +11,12 @@ include(MacroOptionalAddSubdirectory)
 
 macro_optional_find_package(Gphoto2)
 macro_optional_find_package(Sane)
-macro_optional_find_package(IMLIB)
 macro_optional_find_package(Kadmos)
 macro_optional_find_package(Exiv2)
 macro_optional_find_package(JPEG)
 
 MACRO_LOG_FEATURE(GPHOTO2_FOUND "libgphoto2" "Required to build kamera project" "http://heanet.dl.sourceforge.net/sourceforge/gphoto/" FALSE "" "")
 MACRO_LOG_FEATURE(SANE_FOUND "libsane" "Sane lib is needed to build libkscan" "http://www.sane-project.org/" FALSE "" "")
-MACRO_LOG_FEATURE(IMLIB_FOUND "imlib" "imlib is needed to build kuickshow project" "http://freshmeat.net/projects/imlib/" FALSE "" "")
 MACRO_LOG_FEATURE(X11_xf86vmode_FOUND "xf86vmode.h" "xvidmode extensions are needed to build kgamma" "http://www.x.org/" FALSE "" "")
 MACRO_LOG_FEATURE(EXIV2_FOUND "Exiv2 library" "The exiv2 library is needed to build gwenview. Gwenview will not be built without it." "http://www.exiv2.org/" FALSE "" "")
 
@@ -69,10 +67,6 @@ endif (SANE_FOUND)
 if (XVIDMODEEXTENSIONS_FOUND)
    macro_optional_add_subdirectory(kgamma)
 endif (XVIDMODEEXTENSIONS_FOUND)
-
-if (IMLIB_FOUND)
-   macro_optional_add_subdirectory(kuickshow)
-endif (IMLIB_FOUND)
 
 if (EXIV2_FOUND AND JPEG_FOUND)
    macro_optional_add_subdirectory(gwenview)
