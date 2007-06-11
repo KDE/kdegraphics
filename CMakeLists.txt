@@ -19,7 +19,7 @@ macro_optional_find_package(Exiv2)
 macro_optional_find_package(JPEG)
 
 MACRO_LOG_FEATURE(GPHOTO2_FOUND "libgphoto2" "Required to build kamera project" "http://heanet.dl.sourceforge.net/sourceforge/gphoto/" FALSE "" "")
-MACRO_LOG_FEATURE(SANE_FOUND "libsane" "Sane lib is needed to build kooka project" "http://www.sane-project.org/" FALSE "" "")
+MACRO_LOG_FEATURE(SANE_FOUND "libsane" "Sane lib is needed to build libkscan" "http://www.sane-project.org/" FALSE "" "")
 MACRO_LOG_FEATURE(OPENGL_FOUND "libopengl" "OpenGL lib is needed to build kpovmodeler project" "http://www.X.org/" FALSE "" "")
 MACRO_LOG_FEATURE(IMLIB_FOUND "imlib" "imlib is needed to build kuickshow project" "http://freshmeat.net/projects/imlib/" FALSE "" "")
 MACRO_LOG_FEATURE(X11_xf86vmode_FOUND "xf86vmode.h" "xvidmode extensions are needed to build kgamma" "http://www.x.org/" FALSE "" "")
@@ -66,9 +66,7 @@ if(KDE4_GPHOTO2 AND GPHOTO2_FOUND)
 endif(KDE4_GPHOTO2 AND GPHOTO2_FOUND)
 
 if (SANE_FOUND)
-   MESSAGE(STATUS "port Kooka!")
    macro_optional_add_subdirectory(libkscan)
-   #macro_optional_add_subdirectory(kooka)
 endif (SANE_FOUND)
 
 if (XVIDMODEEXTENSIONS_FOUND)
