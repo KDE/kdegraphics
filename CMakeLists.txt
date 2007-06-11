@@ -46,7 +46,6 @@ macro_optional_add_subdirectory(kfile-plugins)
 macro_optional_add_subdirectory(kcolorchooser)
 macro_optional_add_subdirectory(kruler)
 macro_optional_add_subdirectory(kolourpaint)
-macro_optional_add_subdirectory(ligature)
 
 if(Q_WS_X11)
     macro_optional_add_subdirectory(kfax)
