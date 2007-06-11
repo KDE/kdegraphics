@@ -47,8 +47,6 @@ macro_optional_add_subdirectory(kcolorchooser)
 macro_optional_add_subdirectory(kruler)
 macro_optional_add_subdirectory(kolourpaint)
 macro_optional_add_subdirectory(ligature)
-message(STATUS "disable kmrml")
-#macro_optional_add_subdirectory(kmrml)
 
 if(Q_WS_X11)
     macro_optional_add_subdirectory(kfax)
