@@ -26,12 +26,9 @@ if (APPLE)
    find_package(Carbon REQUIRED)
 endif (APPLE)
 
-add_definitions (${QT_DEFINITIONS} ${QT_QTDBUS_DEFINITIONS} ${KDE4_DEFINITIONS} -DHAVE_CONFIG_H=1)
+add_definitions (${QT_DEFINITIONS} ${QT_QTDBUS_DEFINITIONS} ${KDE4_DEFINITIONS})
 include_directories (${QDBUS_INCLUDE_DIRS} ${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} ${KDE4_INCLUDES})
 
-
-include (ConfigureChecks.cmake)
-configure_file (config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config.h )
 
 
 set(libdscparse_SRCS 
