@@ -39,7 +39,7 @@ set(libdscparse_SRCS
 
 add_subdirectory(cmake)
 macro_optional_add_subdirectory(doc)
-macro_optional_add_subdirectory(kfile-plugins)
+macro_optional_add_subdirectory(strigi-analyzer)
 macro_optional_add_subdirectory(kcolorchooser)
 macro_optional_add_subdirectory(kruler)
 macro_optional_add_subdirectory(kolourpaint)
