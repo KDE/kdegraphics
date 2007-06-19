@@ -11,7 +11,6 @@ include(MacroOptionalAddSubdirectory)
 
 macro_optional_find_package(Gphoto2)
 macro_optional_find_package(Sane)
-macro_optional_find_package(Kadmos)
 macro_optional_find_package(Exiv2)
 macro_optional_find_package(JPEG)
 
