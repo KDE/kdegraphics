@@ -44,7 +44,6 @@ macro_optional_add_subdirectory(kruler)
 macro_optional_add_subdirectory(kolourpaint)
 
 if(Q_WS_X11)
-    macro_optional_add_subdirectory(kfax)
     macro_optional_add_subdirectory(ksnapshot)
     macro_optional_add_subdirectory(kghostview)
 endif(Q_WS_X11)
