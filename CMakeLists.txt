@@ -45,6 +45,7 @@ macro_optional_add_subdirectory(kcolorchooser)
 macro_optional_add_subdirectory(kruler)
 if(BLITZ_FOUND)
   macro_optional_add_subdirectory(kolourpaint)
+  macro_optional_add_subdirectory(okular)
 endif(BLITZ_FOUND)
 
 if(Q_WS_X11)
@@ -66,7 +67,5 @@ endif (SANE_FOUND)
 if (EXIV2_FOUND AND JPEG_FOUND)
    macro_optional_add_subdirectory(gwenview)
 endif (EXIV2_FOUND AND JPEG_FOUND)
-
-macro_optional_add_subdirectory(okular)
 
 macro_display_feature_log()
