@@ -60,9 +60,9 @@ if(KDE4_GPHOTO2 AND GPHOTO2_FOUND)
    macro_optional_add_subdirectory(kamera)
 endif(KDE4_GPHOTO2 AND GPHOTO2_FOUND)
 
-if (SANE_FOUND)
+if (SANE_FOUND AND BLITZ_FOUND)
    macro_optional_add_subdirectory(libkscan)
-endif (SANE_FOUND)
+endif (SANE_FOUND AND BLITZ_FOUND)
 
 if (EXIV2_FOUND AND JPEG_FOUND)
    macro_optional_add_subdirectory(gwenview)
