@@ -23,9 +23,6 @@ kdegraphics is a collection of graphic oriented applications:
 * kfile-plugins
     Provide meta information for graphic files.
 
-* kghostview
-    Program (and embeddable KPart) to display *.pdf and *.ps
-
 * kolourpaint
     An easy-to-use paint program designed for everyday tasks like drawing
     simple diagrams/logos/icons and editing screenshots.

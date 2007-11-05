@@ -31,13 +31,6 @@ add_definitions (${QT_DEFINITIONS} ${QT_QTDBUS_DEFINITIONS} ${KDE4_DEFINITIONS})
 include_directories (${QDBUS_INCLUDE_DIRS} ${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} ${KDE4_INCLUDES})
 
 
-
-set(libdscparse_SRCS 
-      ${CMAKE_SOURCE_DIR}/kghostview/dscparse.cpp 
-      ${CMAKE_SOURCE_DIR}/kghostview/dscparse_adapter.cpp 
-   )
-
-
 add_subdirectory(cmake)
 macro_optional_add_subdirectory(doc)
 macro_optional_add_subdirectory(strigi-analyzer)
@@ -50,7 +43,6 @@ endif(BLITZ_FOUND)
 
 if(Q_WS_X11)
     macro_optional_add_subdirectory(ksnapshot)
-    macro_optional_add_subdirectory(kghostview)
     if (XVIDMODEEXTENSIONS_FOUND)
        macro_optional_add_subdirectory(kgamma)
     endif (XVIDMODEEXTENSIONS_FOUND)
