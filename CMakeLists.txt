@@ -44,9 +44,9 @@ endif(BLITZ_FOUND)
 
 if(Q_WS_X11)
     macro_optional_add_subdirectory(ksnapshot)
-    if (XVIDMODEEXTENSIONS_FOUND)
+    if (X11_xf86vmode_FOUND)
        macro_optional_add_subdirectory(kgamma)
-    endif (XVIDMODEEXTENSIONS_FOUND)
+    endif (X11_xf86vmode_FOUND)
 endif(Q_WS_X11)
 
 if(KDE4_GPHOTO2 AND GPHOTO2_FOUND)
