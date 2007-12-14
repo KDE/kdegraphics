@@ -5,21 +5,27 @@ set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/modules )
 # search packages used by KDE
 find_package(KDE4 REQUIRED)
 find_package(Strigi REQUIRED)
-include (KDE4Defaults)
-include (MacroLibrary)
+include(KDE4Defaults)
+include(MacroLibrary)
 include(MacroOptionalAddSubdirectory)
 
 macro_optional_find_package(Blitz)
-macro_optional_find_package(Gphoto2)
-macro_optional_find_package(Sane)
-macro_optional_find_package(Exiv2)
-macro_optional_find_package(JPEG)
+macro_log_feature(BLITZ_FOUND "Blitz" "A a graphical effect and filter library for KDE4" "http://sourceforge.net/projects/qimageblitz" FALSE "kdesupport" "Required to build kolourpaint.")
 
-MACRO_LOG_FEATURE(BLITZ_FOUND "Blitz" "Required to build kolourpaint" "http://sourceforge.net/projects/qimageblitz/" FALSE "0.0.3" "Provided with kdesupport")
-MACRO_LOG_FEATURE(GPHOTO2_FOUND "libgphoto2" "Required to build kamera project" "http://heanet.dl.sourceforge.net/sourceforge/gphoto/" FALSE "" "")
-MACRO_LOG_FEATURE(SANE_FOUND "libsane" "Sane lib is needed for scanning support (kscanplugin)" "http://www.sane-project.org/" FALSE "" "")
-MACRO_LOG_FEATURE(X11_xf86vmode_FOUND "xf86vmode.h" "xvidmode extensions are needed to build kgamma" "http://www.x.org/" FALSE "" "")
-MACRO_LOG_FEATURE(EXIV2_FOUND "Exiv2 library" "The exiv2 library is needed to build gwenview. Gwenview will not be built without it." "http://www.exiv2.org/" FALSE "" "")
+macro_optional_find_package(Gphoto2)
+macro_log_feature(GPHOTO2_FOUND "gphoto2" "A library and framework that lets you download images from several different digital camera models" "http://heanet.dl.sourceforge.net/sourceforge/gphoto" FALSE "" "Required to build the kamera project.")
+
+macro_optional_find_package(Sane)
+macro_log_feature(SANE_FOUND "SANE" "SANE libraries which are needed by applications that want to access scanners." "http://www.sane-project.org" FALSE "" "Provides scanning support for the kscanplugin.")
+
+#X11_xf86vmode discovery is done by FindX11
+macro_log_feature(X11_xf86vmode_FOUND "X11 Video Mode Extension" "An X11 extension providing access to detailed timings of video modes currently in use, and a means to modify them" "http://www.x.org" FALSE "" "X11 xvidmode extensions are needed to build kgamma.")
+
+macro_optional_find_package(Exiv2)
+macro_log_feature(EXIV2_FOUND "Exiv2" "A library to access image metadata" "http://www.exiv2.org" FALSE "" "Required to build gwenview.")
+
+macro_optional_find_package(JPEG)
+macro_log_feature(JPEG_FOUND "JPEG" "A library for reading and writing JPEG image files." "http://www.ijg.org" FALSE "" "Required to build gwenview and also provides support fof PalmDB documents in okular.")
 
 # are these two really required ?
 find_package(ZLIB REQUIRED)
