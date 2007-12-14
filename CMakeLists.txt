@@ -27,8 +27,7 @@ macro_log_feature(EXIV2_FOUND "Exiv2" "A library to access image metadata" "http
 macro_optional_find_package(JPEG)
 macro_log_feature(JPEG_FOUND "JPEG" "A library for reading and writing JPEG image files." "http://www.ijg.org" FALSE "" "Required to build gwenview and also provides support fof PalmDB documents in okular.")
 
-# are these two really required ?
-find_package(ZLIB REQUIRED)
+# is this really required ?
 if (APPLE)
    find_package(Carbon REQUIRED)
 endif (APPLE)
