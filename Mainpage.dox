@@ -2,8 +2,7 @@
 	* @mainpage The KDE Graphics API Reference
 	*
 	* This section contains the KDE online class reference for the current
-	* development version of the KDE graphics package. 
-	*
+	* development version of the KDE graphics package:
 	* - <a href="okular/html/index.html"><b>okular</b></a>
 	*   (<a href="okular/html/classes.html">classes</a>)\n
 	*   <i>API for document plugins (aka backends) for okular.</i>
