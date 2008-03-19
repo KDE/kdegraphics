@@ -24,6 +24,9 @@ macro_log_feature(X11_xf86vmode_FOUND "X11 Video Mode Extension" "An X11 extensi
 macro_optional_find_package(Exiv2)
 macro_log_feature(EXIV2_FOUND "Exiv2" "A library to access image metadata" "http://www.exiv2.org" FALSE "" "Required to build gwenview.")
 
+macro_optional_find_package(Nepomuk)
+macro_log_feature(Nepomuk_FOUND "Nepomuk" "A library to access desktop-wide metadata" "http://www.kde.org" FALSE "" "Provides desktop-wide metadata support for gwenview.")
+
 macro_optional_find_package(JPEG)
 macro_log_feature(JPEG_FOUND "JPEG" "A library for reading and writing JPEG image files." "http://www.ijg.org" FALSE "" "Required to build gwenview and also provides support fof PalmDB documents in okular.")
 
