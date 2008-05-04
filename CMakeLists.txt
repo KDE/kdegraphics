@@ -30,6 +30,9 @@ macro_log_feature(JPEG_FOUND "JPEG" "A library for reading and writing JPEG imag
 macro_optional_find_package(KIPI)
 macro_log_feature(KIPI_FOUND "KIPI" "A library for adding kipi support" "http://www.kipi-plugins.org" FALSE "" "Required to build gwenview with kipi support.")
 
+macro_optional_find_package(KSane)
+macro_log_feature(KSANE_FOUND "KSANE" "A frontend library for applications that want to access scanners." "KDE Extragear" FALSE "" "Provides scanning support for ksaneplugin.")
+
 # is this really required ?
 if (APPLE)
    find_package(Carbon REQUIRED)
@@ -64,6 +67,10 @@ endif(KDE4_GPHOTO2 AND GPHOTO2_FOUND)
 if (SANE_FOUND AND BLITZ_FOUND)
    macro_optional_add_subdirectory(libkscan)
 endif (SANE_FOUND AND BLITZ_FOUND)
+
+if (KSANE_FOUND)
+    macro_optional_add_subdirectory(ksaneplugin)
+endif (KSANE_FOUND)
 
 if (EXIV2_FOUND AND JPEG_FOUND)
    macro_optional_add_subdirectory(gwenview)
