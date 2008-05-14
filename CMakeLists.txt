@@ -16,7 +16,7 @@ macro_optional_find_package(Gphoto2)
 macro_log_feature(GPHOTO2_FOUND "gphoto2" "A library and framework that lets you download images from several different digital camera models" "http://heanet.dl.sourceforge.net/sourceforge/gphoto" FALSE "" "Required to build the kamera project.")
 
 macro_optional_find_package(Sane)
-macro_log_feature(SANE_FOUND "SANE" "SANE libraries which are needed by applications that want to access scanners." "http://www.sane-project.org" FALSE "" "Provides scanning support for the kscanplugin.")
+macro_log_feature(SANE_FOUND "SANE" "SANE libraries which are needed by applications that want to access scanners." "http://www.sane-project.org" FALSE "" "Provides scanning support for libksane and ksaneplugin.")
 
 #X11_xf86vmode discovery is done by FindX11
 macro_log_feature(X11_xf86vmode_FOUND "X11 Video Mode Extension" "An X11 extension providing access to detailed timings of video modes currently in use, and a means to modify them" "http://www.x.org" FALSE "" "X11 xvidmode extensions are needed to build kgamma.")
@@ -29,9 +29,6 @@ macro_log_feature(JPEG_FOUND "JPEG" "A library for reading and writing JPEG imag
 
 macro_optional_find_package(KIPI)
 macro_log_feature(KIPI_FOUND "KIPI" "A library for adding kipi support" "http://www.kipi-plugins.org" FALSE "" "Required to build gwenview with kipi support.")
-
-macro_optional_find_package(KSane)
-macro_log_feature(KSANE_FOUND "KSANE" "A frontend library for applications that want to access scanners." "KDE Extragear" FALSE "" "Provides scanning support for ksaneplugin.")
 
 # is this really required ?
 if (APPLE)
@@ -64,13 +61,10 @@ if(KDE4_GPHOTO2 AND GPHOTO2_FOUND)
    macro_optional_add_subdirectory(kamera)
 endif(KDE4_GPHOTO2 AND GPHOTO2_FOUND)
 
-if (SANE_FOUND AND BLITZ_FOUND)
-   macro_optional_add_subdirectory(libkscan)
-endif (SANE_FOUND AND BLITZ_FOUND)
-
-if (KSANE_FOUND)
-    macro_optional_add_subdirectory(ksaneplugin)
-endif (KSANE_FOUND)
+if (SANE_FOUND)
+   macro_optional_add_subdirectory(libksane)
+   macro_optional_add_subdirectory(ksaneplugin)
+endif (SANE_FOUND)
 
 if (EXIV2_FOUND AND JPEG_FOUND)
    macro_optional_add_subdirectory(gwenview)
