@@ -40,7 +40,7 @@ include_directories (${QDBUS_INCLUDE_DIRS} ${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DI
 
 
 add_subdirectory(cmake)
-add_subdirectory(doc)
+macro_optional_add_subdirectory(doc)
 macro_optional_add_subdirectory(strigi-analyzer)
 macro_optional_add_subdirectory(kcolorchooser)
 macro_optional_add_subdirectory(kruler)
