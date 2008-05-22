@@ -40,7 +40,7 @@ include_directories (${QDBUS_INCLUDE_DIRS} ${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DI
 
 
 add_subdirectory(cmake)
-macro_optional_add_subdirectory(doc)
+add_subdirectory(doc)
 macro_optional_add_subdirectory(strigi-analyzer)
 macro_optional_add_subdirectory(kcolorchooser)
 macro_optional_add_subdirectory(kruler)
@@ -62,7 +62,7 @@ if(KDE4_GPHOTO2 AND GPHOTO2_FOUND)
 endif(KDE4_GPHOTO2 AND GPHOTO2_FOUND)
 
 if (SANE_FOUND)
-   macro_optional_add_subdirectory(libksane)
+   add_subdirectory(libksane)
    macro_optional_add_subdirectory(ksaneplugin)
 endif (SANE_FOUND)
 
