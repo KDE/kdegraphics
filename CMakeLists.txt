@@ -27,7 +27,7 @@ macro_log_feature(EXIV2_FOUND "Exiv2" "A library to access image metadata" "http
 macro_optional_find_package(JPEG)
 macro_log_feature(JPEG_FOUND "JPEG" "A library for reading and writing JPEG image files." "http://www.ijg.org" FALSE "" "Required to build gwenview and also provides support fof PalmDB documents in okular.")
 
-macro_optional_find_package(KIPI)
+macro_optional_find_package(Kipi)
 macro_log_feature(KIPI_FOUND "KIPI" "A library for adding kipi support" "http://www.kipi-plugins.org" FALSE "" "Required to build gwenview with kipi support.")
 
 # is this really required ?
