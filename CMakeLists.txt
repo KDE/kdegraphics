@@ -30,11 +30,6 @@ macro_log_feature(JPEG_FOUND "JPEG" "A library for reading and writing JPEG imag
 macro_optional_find_package(Kipi)
 macro_log_feature(KIPI_FOUND "KIPI" "A library for adding kipi support" "http://www.kipi-plugins.org" FALSE "" "Required to build gwenview with kipi support.")
 
-# is this really required ?
-if (APPLE)
-   find_package(Carbon REQUIRED)
-endif (APPLE)
-
 add_definitions (${QT_DEFINITIONS} ${QT_QTDBUS_DEFINITIONS} ${KDE4_DEFINITIONS})
 include_directories (${QDBUS_INCLUDE_DIRS} ${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} ${KDE4_INCLUDES})
 
