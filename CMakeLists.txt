@@ -22,7 +22,7 @@ macro_log_feature(SANE_FOUND "SANE" "SANE libraries which are needed by applicat
 macro_log_feature(X11_xf86vmode_FOUND "X11 Video Mode Extension" "An X11 extension providing access to detailed timings of video modes currently in use, and a means to modify them" "http://www.x.org" FALSE "" "X11 xvidmode extensions are needed to build kgamma.")
 
 macro_optional_find_package(Exiv2)
-macro_log_feature(EXIV2_FOUND "Exiv2" "A library to access image metadata" "http://www.exiv2.org" FALSE "" "Required to build gwenview.")
+macro_log_feature(EXIV2_FOUND "Exiv2" "A library to access image metadata" "http://www.exiv2.org" FALSE "" "Required to build libkexiv2 and gwenview.")
 
 macro_optional_find_package(JPEG)
 macro_log_feature(JPEG_FOUND "JPEG" "A library for reading and writing JPEG image files." "http://www.ijg.org" FALSE "" "Required to build gwenview and also provides support fof PalmDB documents in okular.")
