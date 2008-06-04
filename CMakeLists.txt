@@ -61,7 +61,6 @@ if(KDE4_GPHOTO2 AND GPHOTO2_FOUND)
 endif(KDE4_GPHOTO2 AND GPHOTO2_FOUND)
 
 if (SANE_FOUND)
-   add_subdirectory(libksane)
    macro_optional_add_subdirectory(ksaneplugin)
 endif (SANE_FOUND)
 
