@@ -12,6 +12,12 @@ if( WIN32 )
 find_package( Expat )
 endif( WIN32 )
 
+#require by libs/libkdcraw
+find_package(LCMS)
+
+#require by libs/libkdcraw, gwenview, and okular
+find_package(JPEG)
+
 macro_optional_find_package(Blitz)
 macro_log_feature(BLITZ_FOUND "Blitz" "A a graphical effect and filter library for KDE4" "http://sourceforge.net/projects/qimageblitz" FALSE "kdesupport" "Required to build kolourpaint.")
 
@@ -65,8 +71,8 @@ if (SANE_FOUND)
    macro_optional_add_subdirectory(ksaneplugin)
 endif (SANE_FOUND)
 
-if (EXIV2_FOUND AND JPEG_FOUND)
+if (EXIV2_FOUND)
    macro_optional_add_subdirectory(gwenview)
-endif (EXIV2_FOUND AND JPEG_FOUND)
+endif (EXIV2_FOUND)
 
 macro_display_feature_log()
