@@ -13,10 +13,10 @@ find_package( Expat )
 endif( WIN32 )
 
 #require by libs/libkdcraw
-find_package(LCMS)
+find_package(LCMS REQUIRED)
 
 #require by libs/libkdcraw, gwenview, and okular
-find_package(JPEG)
+find_package(JPEG REQUIRED)
 
 macro_optional_find_package(Blitz)
 macro_log_feature(BLITZ_FOUND "Blitz" "A a graphical effect and filter library for KDE4" "http://sourceforge.net/projects/qimageblitz" FALSE "kdesupport" "Required to build kolourpaint.")
