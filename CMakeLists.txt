@@ -12,9 +12,6 @@ if( WIN32 )
 find_package( Expat )
 endif( WIN32 )
 
-#require by libs/libkdcraw
-find_package(LCMS REQUIRED)
-
 #require by libs/libkdcraw, gwenview, and okular
 find_package(JPEG REQUIRED)
 
