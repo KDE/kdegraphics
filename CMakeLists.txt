@@ -15,8 +15,8 @@ endif( WIN32 )
 #require by libs/libkdcraw, gwenview, and okular
 find_package(JPEG REQUIRED)
 
-macro_optional_find_package(Blitz)
-macro_log_feature(BLITZ_FOUND "Blitz" "A a graphical effect and filter library for KDE4" "http://sourceforge.net/projects/qimageblitz" FALSE "kdesupport" "Required to build kolourpaint.")
+macro_optional_find_package(QImageBlitz)
+macro_log_feature(QIMAGEBLITZ_FOUND "QImageBlitz" "A a graphical effect and filter library for KDE4" "http://sourceforge.net/projects/qimageblitz" FALSE "kdesupport" "Required to build kolourpaint.")
 
 macro_optional_find_package(Gphoto2)
 macro_log_feature(GPHOTO2_FOUND "gphoto2" "A library and framework that lets you download images from several different digital camera models" "http://heanet.dl.sourceforge.net/sourceforge/gphoto" FALSE "" "Required to build the kamera project.")
@@ -48,10 +48,10 @@ macro_optional_add_subdirectory(strigi-analyzer)
 macro_optional_add_subdirectory(kcolorchooser)
 macro_optional_add_subdirectory(kruler)
 macro_optional_add_subdirectory(svgpart)
-if(BLITZ_FOUND)
+if(QIMAGEBLITZ_FOUND)
   macro_optional_add_subdirectory(kolourpaint)
   macro_optional_add_subdirectory(okular)
-endif(BLITZ_FOUND)
+endif(QIMAGEBLITZ_FOUND)
 
 if(Q_WS_X11)
     macro_optional_add_subdirectory(ksnapshot)
