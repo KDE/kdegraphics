@@ -29,7 +29,7 @@ if(X11_FOUND)
   macro_log_feature(X11_xf86vmode_FOUND "X11 Video Mode Extension (xf86vm)" "An X11 extension providing access to detailed timings of video modes currently in use, and a means to modify them" "http://www.x.org" FALSE "" "X11 xvidmode extensions are needed to build kgamma.")
 endif(X11_FOUND)
 
-set(EXIV2_MIN_VERSION "0.18") # std::string Metadatum::print(const ExifData* pMetadata) const  was added in 0.18
+set(EXIV2_MIN_VERSION "0.17") # std::string Metadatum::print(const ExifData* pMetadata) const  was added in 0.18
 macro_optional_find_package(Exiv2)
 macro_log_feature(EXIV2_FOUND "Exiv2" "A library to access image metadata" "http://www.exiv2.org" FALSE ${EXIV2_MIN_VERSION} "Required to build libkexiv2 and gwenview.")
 
