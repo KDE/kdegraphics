@@ -31,7 +31,7 @@ endif(X11_FOUND)
 
 set(EXIV2_MIN_VERSION "0.18") # std::string Metadatum::print(const ExifData* pMetadata) const  was added in 0.18
 macro_optional_find_package(Exiv2)
-macro_log_feature(EXIV2_FOUND "Exiv2" "A library to access image metadata" "http://www.exiv2.org" FALSE "" "Required to build libkexiv2 and gwenview.")
+macro_log_feature(EXIV2_FOUND "Exiv2" "A library to access image metadata" "http://www.exiv2.org" FALSE ${EXIV2_MIN_VERSION} "Required to build libkexiv2 and gwenview.")
 
 macro_optional_find_package(JPEG)
 macro_log_feature(JPEG_FOUND "JPEG" "A library for reading and writing JPEG image files." "http://www.ijg.org" FALSE "" "Required to build gwenview and also provides support fof PalmDB documents in okular.")
