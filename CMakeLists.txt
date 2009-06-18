@@ -16,7 +16,7 @@ endif( WIN32 )
 find_package(JPEG REQUIRED)
 
 macro_optional_find_package(QImageBlitz)
-macro_log_feature(QIMAGEBLITZ_FOUND "QImageBlitz" "A a graphical effect and filter library for KDE4" "http://sourceforge.net/projects/qimageblitz" FALSE "kdesupport" "Required to build kolourpaint and okular.")
+macro_log_feature(QIMAGEBLITZ_FOUND "QImageBlitz" "An image effects library" "http://sourceforge.net/projects/qimageblitz" FALSE "kdesupport" "Required to build kolourpaint and okular.")
 
 macro_optional_find_package(Gphoto2)
 macro_log_feature(GPHOTO2_FOUND "gphoto2" "A library and framework that lets you download images from several different digital camera models" "http://heanet.dl.sourceforge.net/sourceforge/gphoto" FALSE "" "Required to build the kamera project.")
@@ -34,13 +34,15 @@ macro_optional_find_package(Exiv2)
 macro_log_feature(EXIV2_FOUND "Exiv2" "A library to access image metadata" "http://www.exiv2.org" FALSE ${EXIV2_MIN_VERSION} "Required to build libkexiv2 and gwenview.")
 
 macro_optional_find_package(JPEG)
-macro_log_feature(JPEG_FOUND "JPEG" "A library for reading and writing JPEG image files." "http://www.ijg.org" FALSE "" "Required to build gwenview and also provides support fof PalmDB documents in okular.")
+macro_log_feature(JPEG_FOUND "JPEG" "A library for reading and writing JPEG image files" "http://www.ijg.org" FALSE "" "Required to build gwenview and also provides support fof PalmDB documents in okular.")
 
 macro_optional_find_package(Kipi)
 macro_log_feature(KIPI_FOUND "KIPI" "A library for adding kipi support" "http://www.kipi-plugins.org" FALSE "" "Required to build gwenview with kipi support.")
 
 macro_optional_find_package(Kdcraw)
+#do not macro_log_feature() Kdcraw
 macro_optional_find_package(Kexiv2)
+#do not macro_log_feature() Kexiv2
 
 add_definitions (${QT_DEFINITIONS} ${QT_QTDBUS_DEFINITIONS} ${KDE4_DEFINITIONS})
 include_directories (${QDBUS_INCLUDE_DIRS} ${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} ${KDE4_INCLUDES})
