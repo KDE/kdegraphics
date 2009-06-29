@@ -11,6 +11,7 @@ include(MacroOptionalAddSubdirectory)
 if( WIN32 )
 find_package( Expat )
 endif( WIN32 )
+find_package( LibKNotificationItem-1 REQUIRED )
 
 #require by libs/libkdcraw, gwenview, and okular
 find_package(JPEG REQUIRED)
@@ -45,7 +46,7 @@ macro_optional_find_package(Kexiv2)
 #do not macro_log_feature() Kexiv2
 
 add_definitions (${QT_DEFINITIONS} ${QT_QTDBUS_DEFINITIONS} ${KDE4_DEFINITIONS})
-include_directories (${QDBUS_INCLUDE_DIRS} ${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} ${KDE4_INCLUDES})
+include_directories (${QDBUS_INCLUDE_DIRS} ${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} ${KDE4_INCLUDES} ${LIBKNOTIFICATIONITEM-1_INCLUDE_DIR})
 
 
 add_subdirectory(cmake)
@@ -69,7 +70,7 @@ if(Q_WS_X11)
 endif(Q_WS_X11)
 
 if(KDE4_GPHOTO2 AND GPHOTO2_FOUND)
-   macro_optional_add_subdirectory(kamera)
+    macro_optional_add_subdirectory(kamera)
 endif(KDE4_GPHOTO2 AND GPHOTO2_FOUND)
 
 if (SANE_FOUND)
