@@ -11,7 +11,6 @@ include(MacroOptionalAddSubdirectory)
 if( WIN32 )
 find_package( Expat )
 endif( WIN32 )
-find_package( LibKNotificationItem-1 REQUIRED )
 
 #require by libs/libkdcraw, gwenview, and okular
 find_package(JPEG REQUIRED)
