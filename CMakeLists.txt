@@ -50,7 +50,6 @@ include_directories (${QDBUS_INCLUDE_DIRS} ${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DI
 
 add_subdirectory(cmake)
 add_subdirectory(libs)
-macro_optional_add_subdirectory(doc)
 macro_optional_add_subdirectory(strigi-analyzer)
 macro_optional_add_subdirectory(thumbnailers)
 macro_optional_add_subdirectory(kcolorchooser)
@@ -80,4 +79,5 @@ if (EXIV2_FOUND)
    macro_optional_add_subdirectory(gwenview)
 endif (EXIV2_FOUND)
 
+macro_optional_add_subdirectory(doc)
 macro_display_feature_log()
