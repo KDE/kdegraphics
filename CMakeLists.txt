@@ -30,8 +30,8 @@ if(X11_FOUND)
 endif(X11_FOUND)
 
 # Preview acess was added in Exiv2 0.18
-# Several fixes done in 0.19. Set as default version for KDE 4.4
-set(EXIV2_MIN_VERSION "0.19") 
+# IMPORTANT : Several fixes done in 0.19. Set as default version when KDE 4.4 will be released
+set(EXIV2_MIN_VERSION "0.18") 
 macro_optional_find_package(Exiv2)
 macro_log_feature(EXIV2_FOUND "Exiv2" "A library to access image metadata" "http://www.exiv2.org" FALSE ${EXIV2_MIN_VERSION} "Required to build libkexiv2 and gwenview.")
 
