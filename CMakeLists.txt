@@ -5,7 +5,6 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_SOURCE_DIR}/cmake/modules )
 OPTION(BUILD_LIBS "build kdegraphics library" ON)
 # search packages used by KDE
 find_package(KDE4 REQUIRED)
-find_package(Strigi REQUIRED)
 include(KDE4Defaults)
 include(MacroLibrary)
 include(MacroOptionalAddSubdirectory)
