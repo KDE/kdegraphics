@@ -2,6 +2,7 @@ project(kdegraphics)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_SOURCE_DIR}/cmake/modules )
 
+OPTION(BUILD_LIBS "build kdegraphics library" ON)
 # search packages used by KDE
 find_package(KDE4 REQUIRED)
 find_package(Strigi REQUIRED)
@@ -51,7 +52,9 @@ include_directories (${QDBUS_INCLUDE_DIRS} ${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DI
 
 
 add_subdirectory(cmake)
-add_subdirectory(libs)
+if (BUILD_LIBS)
+    add_subdirectory(libs)
+endif(BUILD_LIBS)
 macro_optional_add_subdirectory(strigi-analyzer)
 macro_optional_add_subdirectory(thumbnailers)
 macro_optional_add_subdirectory(kcolorchooser)
