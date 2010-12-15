@@ -67,8 +67,11 @@ if(QIMAGEBLITZ_FOUND)
   macro_optional_add_subdirectory(okular)
 endif(QIMAGEBLITZ_FOUND)
 
+IF(Q_WS_X11 OR Q_WS_WIN)
+  macro_optional_add_subdirectory(ksnapshot)
+ENDIF(Q_WS_X11 OR Q_WS_WIN)
+
 if(Q_WS_X11)
-    macro_optional_add_subdirectory(ksnapshot)
     if (X11_xf86vmode_FOUND)
        macro_optional_add_subdirectory(kgamma)
     endif (X11_xf86vmode_FOUND)
