@@ -12,7 +12,7 @@ if( WIN32 )
 find_package( Expat )
 endif( WIN32 )
 
-#require by libs/libkdcraw, gwenview, and okular
+#required by okular
 find_package(JPEG REQUIRED)
 
 macro_optional_find_package(QImageBlitz)
