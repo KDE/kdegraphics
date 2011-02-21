@@ -49,7 +49,7 @@ macro_optional_find_package(Kdcraw)
 macro_optional_find_package(Kexiv2)
 #do not macro_log_feature() Kexiv2
 
-add_definitions (${QT_DEFINITIONS} ${QT_QTDBUS_DEFINITIONS} ${KDE4_DEFINITIONS})
+add_definitions (${QT_DEFINITIONS} ${QT_QTDBUS_DEFINITIONS} ${KDE4_DEFINITIONS} )
 include_directories (${QDBUS_INCLUDE_DIRS} ${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} ${KDE4_INCLUDES})
 
 
@@ -63,19 +63,11 @@ if(QIMAGEBLITZ_FOUND)
   macro_optional_add_subdirectory(okular)
 endif(QIMAGEBLITZ_FOUND)
 
-IF(Q_WS_X11 OR Q_WS_WIN)
-  macro_optional_add_subdirectory(ksnapshot)
-ENDIF(Q_WS_X11 OR Q_WS_WIN)
-
 if(Q_WS_X11)
     if (X11_xf86vmode_FOUND)
        macro_optional_add_subdirectory(kgamma)
     endif (X11_xf86vmode_FOUND)
 endif(Q_WS_X11)
-
-if(KDE4_GPHOTO2 AND GPHOTO2_FOUND)
-    macro_optional_add_subdirectory(kamera)
-endif(KDE4_GPHOTO2 AND GPHOTO2_FOUND)
 
 if (SANE_FOUND)
    macro_optional_add_subdirectory(ksaneplugin)
