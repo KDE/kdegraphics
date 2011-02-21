@@ -63,19 +63,9 @@ if(QIMAGEBLITZ_FOUND)
   macro_optional_add_subdirectory(okular)
 endif(QIMAGEBLITZ_FOUND)
 
-if(Q_WS_X11)
-    if (X11_xf86vmode_FOUND)
-       macro_optional_add_subdirectory(kgamma)
-    endif (X11_xf86vmode_FOUND)
-endif(Q_WS_X11)
-
 if (SANE_FOUND)
    macro_optional_add_subdirectory(ksaneplugin)
 endif (SANE_FOUND)
-
-if (EXIV2_FOUND)
-   macro_optional_add_subdirectory(gwenview)
-endif (EXIV2_FOUND)
 
 macro_optional_add_subdirectory(doc)
 macro_display_feature_log()
