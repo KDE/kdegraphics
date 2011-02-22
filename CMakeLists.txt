@@ -24,11 +24,6 @@ macro_log_feature(SANE_FOUND "SANE" "SANE libraries which are needed by applicat
 macro_optional_find_package(LCMS)
 macro_log_feature(LCMS_FOUND "Little CMS" "Color Management library" "http://www.littlecms.com/" FALSE "" "Required to build libkdcraw and raw thumbnailer")
 
-if(X11_FOUND)
-  #X11_xf86vmode discovery is done by FindX11
-  macro_log_feature(X11_xf86vmode_FOUND "X11 Video Mode Extension (xf86vm)" "An X11 extension providing access to detailed timings of video modes currently in use, and a means to modify them" "http://www.x.org" FALSE "" "X11 xvidmode extensions are needed to build kgamma.")
-endif(X11_FOUND)
-
 # Preview acess was added in Exiv2 0.18
 # IMPORTANT : Several fixes done in 0.19. Set as default version when KDE 4.4 will be released
 set(EXIV2_MIN_VERSION "0.18") 
