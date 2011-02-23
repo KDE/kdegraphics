@@ -18,9 +18,6 @@ find_package(JPEG REQUIRED)
 macro_optional_find_package(QImageBlitz)
 macro_log_feature(QIMAGEBLITZ_FOUND "QImageBlitz" "An image effects library" "http://sourceforge.net/projects/qimageblitz" FALSE "kdesupport" "Required to build kolourpaint and okular.")
 
-macro_optional_find_package(Sane)
-macro_log_feature(SANE_FOUND "SANE" "SANE libraries which are needed by applications that want to access scanners." "http://www.sane-project.org" FALSE "" "Provides scanning support for libksane and ksaneplugin.")
-
 macro_optional_find_package(LCMS)
 macro_log_feature(LCMS_FOUND "Little CMS" "Color Management library" "http://www.littlecms.com/" FALSE "" "Required to build libkdcraw and raw thumbnailer")
 
@@ -52,10 +49,6 @@ endif(BUILD_LIBS)
 if(QIMAGEBLITZ_FOUND)
   macro_optional_add_subdirectory(okular)
 endif(QIMAGEBLITZ_FOUND)
-
-if (SANE_FOUND)
-   macro_optional_add_subdirectory(ksaneplugin)
-endif (SANE_FOUND)
 
 macro_optional_add_subdirectory(doc)
 macro_display_feature_log()
