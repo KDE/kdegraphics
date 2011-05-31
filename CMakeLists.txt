@@ -1,15 +1,14 @@
 project(kdegraphics)
 
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_SOURCE_DIR}/cmake/modules )
+option(BUILD_LIBS "build kdegraphics library" ON)
 
-OPTION(BUILD_LIBS "build kdegraphics library" ON)
 # search packages used by KDE
 find_package(KDE4 REQUIRED)
 include(KDE4Defaults)
 include(MacroLibrary)
-include(MacroOptionalAddSubdirectory)
+
 if( WIN32 )
-find_package( Expat )
+  find_package( Expat )
 endif( WIN32 )
 
 #required by okular
@@ -29,10 +28,8 @@ macro_optional_find_package(Kexiv2)
 add_definitions (${QT_DEFINITIONS} ${QT_QTDBUS_DEFINITIONS} ${KDE4_DEFINITIONS} )
 include_directories (${QDBUS_INCLUDE_DIRS} ${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} ${KDE4_INCLUDES})
 
-
-add_subdirectory(cmake)
 if (BUILD_LIBS)
-    add_subdirectory(libs)
+  add_subdirectory(libs)
 endif(BUILD_LIBS)
 if(QIMAGEBLITZ_FOUND)
   macro_optional_add_subdirectory(okular)
