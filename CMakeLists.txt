@@ -1,5 +1,5 @@
 project(kdegraphics)
-
+return()
 option(BUILD_LIBS "build kdegraphics library" ON)
 
 # search packages used by KDE
